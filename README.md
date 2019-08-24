@@ -28,7 +28,18 @@ TODO: Write history
 
 ## Credits
 
-[Matthew Ham: Solutions Architect](https://github.com/matthewninja)
+var credits    = require( 'credits' );
+var creditPath = '/Users/you/sfw-helper';
+
+credits( creditPath )
+  .then( function( credits ) {
+    console.log( credits );
+  } )
+  .catch( function( error ) {
+    console.log( error );
+
+    process.exit( 1 );
+  } );
 
 ## License
 
