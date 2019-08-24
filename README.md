@@ -43,38 +43,32 @@ npm test
 ## Credit
 <p float="left">
 <p>
-    <img src="https://avatars0.githubusercontent.com/u/14874215?s=400&v=4" alt>
+    <img src="https://avatars0.githubusercontent.com/u/14874215?s=400&v=4" width="75">
    
    Matthew Ham: Solutions Architect [:computer:] 
    [Github](https://github.com/matthewninja) - [LinkedIn](https://www.linkedin.com/in/matthewninja/)
 </p>
 
 <p>
-    <img src="https://avatars0.githubusercontent.com/u/14874215?s=400&v=4" alt>
+    <img src="https://avatars0.githubusercontent.com/u/14874215?s=400&v=4" width="75">
    
    Jenny Wu: Project Lead [:notebook:] 
    [Github](https://github.com/jennywwei) - [LinkedIn](https://www.linkedin.com/in/jenny-wu-1641b811b/)
 </p>
 <p>
-    <img src="https://avatars0.githubusercontent.com/u/23428969?s=400&v=4" alt>
+    <img src="https://avatars0.githubusercontent.com/u/23428969?s=400&v=4" width="75">
    
    Fardeen Chowdhury: UX Designer [:pencil2:] 
    [Github](https://github.com/peppermyangus) - [LinkedIn](https://www.linkedin.com/in/fardeen-chowdhury/)
 </p>
 <p>
-    <img src="https://avatars3.githubusercontent.com/u/44846748?s=400&v=4" alt>
+    <img src="https://avatars3.githubusercontent.com/u/44846748?s=400&v=4" width="75">
    
    Eric Rabiner: Software Engineer [:computer:] 
    [Github](https://github.com/ericrabiner) - [LinkedIn](https://www.linkedin.com/in/ericrabiner/)
 </p>
 </p>
-Jenny Wu: Project Lead [:notebook:]
-[Github](https://github.com/jennywwei) - [LinkedIn](https://www.linkedin.com/in/jenny-wu-1641b811b/)
 
-Fardeen Chowdhury: UX Designer [:pencil2:]
-[Github](https://github.com/peppermyangus) - [LinkedIn](https://www.linkedin.com/in/fardeen-chowdhury/)
-
-| ![<img src="https://avatars3.githubusercontent.com/u/44846748?s=400&v=4" width="50px;"/><br /><sub>Eric Rabiner</sub>](https://www.linkedin.com/in/ericrabiner/)<br />[Github](https://github.com/ericrabiner) [LinkedIn](https://www.linkedin.com/in/ericrabiner/) | ![<img src="https://avatars0.githubusercontent.com/u/23428969?s=400&v=4" width="50px;"/><br /><sub>Fardeen Chowdhury</sub>](https://www.linkedin.com/in/fardeen-chowdhury/)<br />[Github](https://github.com/peppermyangus) [LinkedIn](https://www.linkedin.com/in/fardeen-chowdhury/) | ![<img src="https://avatars0.githubusercontent.com/u/14874215?s=400&v=4" width="50px;"/><br /><sub>Matthew hAM</sub>](https://www.linkedin.com/in/matthewninja/)<br />[Github](https://github.com/matthewninja) [LinkedIn](https://www.linkedin.com/in/matthewninja/) | ![<img src="https://avatars0.githubusercontent.com/u/14874215?s=400&v=4" width="50px;"/><br /><sub> Jenny wu</sub>](https://www.linkedin.com/in/jenny-wu-1641b811b/)<br />[Github](https://github.com/jennywwei) [LinkedIn](https://www.linkedin.com/in/jenny-wu-1641b811b/) | 
 
 
 
