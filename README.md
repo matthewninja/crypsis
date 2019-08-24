@@ -42,13 +42,17 @@ npm test
 
 ## Credit
 
-Matthew Ham: Solutions Architect – [Github](https://github.com/matthewninja) - [LinkedIn](https://www.linkedin.com/in/matthewninja/)
+Matthew Ham: Solutions Architect [:computer:]
+[Github](https://github.com/matthewninja) - [LinkedIn](https://www.linkedin.com/in/matthewninja/)
 
-Jenny Wu: Project Lead - [Github](https://github.com/jennywwei) - [LinkedIn](https://www.linkedin.com/in/jenny-wu-1641b811b/)
+Jenny Wu: Project Lead [:notebook:]
+[Github](https://github.com/jennywwei) - [LinkedIn](https://www.linkedin.com/in/jenny-wu-1641b811b/)
 
-Eric Rabiner: Software Engineer - [Github](https://github.com/jennywwei) - [LinkedIn](https://www.linkedin.com/in/ericrabiner/)
+Eric Rabiner: Software Engineer [:computer:]
+[Github](https://github.com/jennywwei) - [LinkedIn](https://www.linkedin.com/in/ericrabiner/)
 
-Fardeen Chowdhury: UX Designer - [Github](https://github.com/jennywwei) - [LinkedIn](https://www.linkedin.com/in/fardeen-chowdhury/)
+Fardeen Chowdhury: UX Designer [:pencil2:]
+[Github](https://github.com/jennywwei) - [LinkedIn](https://www.linkedin.com/in/fardeen-chowdhury/)
 
 
 ## Contributing
