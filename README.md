@@ -6,6 +6,23 @@ Chrome extension to make web content SFW
 (1) Sanitation of webcontent as protection against innappropriate images through the replacement by a harmless image. For use in public administrative, professional, and parental environments.
 (2) User-chosen censorship of multimedia as protection against trigger-sensitive content. 
 
+## Features
+
+### General Features
+
+* Established standard of error for filter (45%+)
+*  Three modes users to choose from; Clean, Lewd, Explicit
+   * Clean: No risk revealed at all, all classified risk is replaced
+   * Lewd: Only explicit images are blocked, risky images allowed
+   * Explicit: User based select image filter, in other words, some types of explicit is allowed based on user preference
+* Password protected
+
+### Neutralizing Features
+
+* Blocks porn and other adult content
+* Blocks gore involving graphic violence
+
+
 ## Installation
 
 OS X & Linux:
@@ -34,11 +51,6 @@ Describe how to install all development dependencies and how to run an automated
 make install
 npm test
 ```
-
-## Release History
-
-* 0.0.1
-    * Work in progress
 
 ## Credit
 <p float="left">
