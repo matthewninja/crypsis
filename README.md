@@ -31,7 +31,7 @@ Access the page of Chrome extensions (chrome://extensions/) and check off 'Devel
 
 To activate:
 
-[Visit the Extension Webstore] (https://chrome.google.com/webstore/category/extensions) 
+[Visit the Extension Webstore](https://chrome.google.com/webstore/category/extensions) 
 Search 'Crysis'
 Add to Chrome
 
