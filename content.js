@@ -16,12 +16,13 @@ for(let i = 0; i < images.length; i++) {
 }
 // console.log(srcList);
 const img = document.getElementById('img');
+console.log("HEllo")
 
 // Load the model.
-mobilenet.load().then(model => {
-  // Classify the image.
-  model.classify(img).then(predictions => {
-    console.log('Predictions: ');
-    console.log(predictions);
-  });
-});
+// mobilenet.load().then(model => {
+//   // Classify the image.
+//   model.classify(img).then(predictions => {
+//     console.log('Predictions: ');
+//     console.log(predictions);
+//   });
+// });
