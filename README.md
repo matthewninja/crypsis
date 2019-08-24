@@ -36,7 +36,7 @@ Sanitation of webcontent as protection against innappropriate images through the
 
 #### Download 
 
-Access the page of Chrome extensions (chrome://extensions/) and check off 'Developer Mode'
+Access the page of Chrome extensions (chrome://extensions/) and turn on 'Developer Mode'
 
 Load unpacked and select file
 
@@ -44,7 +44,7 @@ Load unpacked and select file
 
 [Visit the Extension Webstore](https://chrome.google.com/webstore/category/extensions) 
 
-Search 'Crysis' and then select 'Add to Chrome'
+Search *Crysis* and select 'Add to Chrome'
 
 ### Filter Configuration
 
