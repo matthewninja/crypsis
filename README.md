@@ -6,31 +6,76 @@ Chrome extension to make web content SFW
 (1) Sanitiation of webcontent as protection against innappropriate images. For use in public administrative, professional, and parental environments.
 (2) User-chosen censorship of multimedia as protection against trigger-sensitive content. 
 
+[![NPM Version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Downloads Stats][npm-downloads]][npm-url]
+
+One to two paragraph statement about your product and what it does.
+
+![](header.png)
+
 ## Installation
 
-TODO: Describe the installation process
+OS X & Linux:
 
-## Usage
+```sh
+npm install my-crazy-module --save
+```
 
-TODO: Write usage instructions
+Windows:
+
+```sh
+edit autoexec.bat
+```
+
+## Usage example
+
+A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+
+_For more examples and usage, please refer to the [Wiki][wiki]._
+
+## Development setup
+
+Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
+
+```sh
+make install
+npm test
+```
+
+## Release History
+
+* 0.0.1
+    * Work in progress
+
+## Credit
+
+Matthew Ham: Solutions Architect – [Github](https://github.com/matthewninja)
+
+Jenny Wu: Project Lead - [Github](https://github.com/jennywwei)
+
+Eric Rabiner: Software Engineer - [Github](https://github.com/jennywwei)
+
+Farheed Chowdhury: UX Designer - [Github](https://github.com/jennywwei)
+
+
+Distributed under the XYZ license. See ``LICENSE`` for more information.
+
+[https://github.com/yourname/github-link](https://github.com/dbader/)
 
 ## Contributing
 
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
+1. Fork it (<https://github.com/yourname/yourproject/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
 
-## History
+<!-- Markdown link & img dfn's -->
+[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/datadog-metrics
+[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
+[wiki]: https://github.com/yourname/yourproject/wiki
 
-TODO: Write history
-
-## Credits
-<!ALL-CONTRIBUTORS-LIST:START -->
-[<img src="https://avatars0.githubusercontent.com/u/14874215?s=400&v=4" width="75px;"/><br /><sub>Matthew Ham</sub>](https://github.com/matthewninja)<br />[💻](https://github.com/matthewninja) | [<img src="https://avatars0.githubusercontent.com/u/14874215?s=400&v=4" width="75px;"/><br /><sub>Jenny Wu</sub>](https://github.com/jennywwei)<br />[💻](https://github.com/jennywwei) 
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-## License
-
-TODO: Write license
