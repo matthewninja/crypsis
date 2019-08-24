@@ -30,6 +30,7 @@ Sanitation of webcontent as protection against innappropriate images through the
 Access the page of Chrome extensions (chrome://extensions/) and check off 'Developer Mode'
 
 To activate:
+
 [Visit the Extension Webstore] (https://chrome.google.com/webstore/category/extensions) 
 Search 'Crysis'
 Add to Chrome
