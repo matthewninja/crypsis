@@ -36,6 +36,8 @@ Sanitation of webcontent as protection against innappropriate images through the
 
 Access the page of Chrome extensions (chrome://extensions/) and check off 'Developer Mode'
 
+Load unpacked and select file
+
 To activate:
 
 [Visit the Extension Webstore](https://chrome.google.com/webstore/category/extensions) 
@@ -65,7 +67,7 @@ npm test
 ## Credit
 <p float="left">
 <p>
-    <img src="https://www.facebook.com/photo.php?fbid=2753621547990591&set=a.155030854516353&type=3&theater" width="75">
+    <img src="https://avatars0.githubusercontent.com/u/14874215?s=400&v=4" width="75">
    
    Matthew Ham: Solutions Architect [:computer:] 
    [Github](https://github.com/matthewninja) - [LinkedIn](https://www.linkedin.com/in/matthewninja/)
