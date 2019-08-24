@@ -3,8 +3,7 @@ Chrome extension to make web content SFW while still allowing access to the site
 
 
 ## Motivation 
-(1) Sanitation of webcontent as protection against innappropriate images through the replacement by a harmless image. For use in public administrative, professional, and parental environments.
-(2) User-chosen censorship of multimedia as protection against trigger-sensitive content. 
+Sanitation of webcontent as protection against innappropriate images through the replacement by a harmless image. For use in public administrative, professional, and parental environments. On the personal level, user-chosen censorship of multimedia as protection against trigger-sensitive content. 
 
 ## Features
 
@@ -17,7 +16,8 @@ Chrome extension to make web content SFW while still allowing access to the site
    * Clean: No risk revealed at all, all classified risk is replaced
    * Lewd: Only explicit images are blocked, risky images allowed
    * Explicit: User based select image filter, in other words, some types of explicit is allowed based on user preference
-* Password protected
+* Password protected user-settings
+* Registered accounts to be ued on multiple devices
 
 ### Neutralizing Features
 
