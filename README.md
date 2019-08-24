@@ -50,14 +50,13 @@ npm test
 
 ## Credit
 
-Matthew Ham: Solutions Architect – [Github](https://github.com/matthewninja)
+Matthew Ham: Solutions Architect – [Github](https://github.com/matthewninja) - [LinkedIn](https://www.linkedin.com/in/matthewninja/)
 
-Jenny Wu: Project Lead - [Github](https://github.com/jennywwei)
+Jenny Wu: Project Lead - [Github](https://github.com/jennywwei) - [LinkedIn](https://www.linkedin.com/in/jenny-wu-1641b811b/)
 
-Eric Rabiner: Software Engineer - [Github](https://github.com/jennywwei)
+Eric Rabiner: Software Engineer - [Github](https://github.com/jennywwei) - [LinkedIn](https://www.linkedin.com/in/ericrabiner/)
 
-Farheed Chowdhury: UX Designer - [Github](https://github.com/jennywwei)
-
+Fardeen Chowdhury: UX Designer - [Github](https://github.com/jennywwei) - [LinkedIn](https://www.linkedin.com/in/fardeen-chowdhury/)
 
 Distributed under the XYZ license. See ``LICENSE`` for more information.
 
