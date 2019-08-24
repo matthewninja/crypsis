@@ -8,6 +8,13 @@
   //   "default_icon": "icon.png"
   // },
   "author": "Matthew Ham, Jenny Wu, Eric Rabiner, Fardeen Chowdhury",
+  "permissions": [
+    "https://some-random-api.ml/*"
+  ],
+  "background": {
+    "scripts":["./js/background.js"],
+    "persistent": false
+  },
   "content_scripts": [
   {
     "matches": [
