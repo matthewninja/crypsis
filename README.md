@@ -9,7 +9,7 @@ Sanitation of webcontent as protection against innappropriate images through the
 
 <img src="https://github.com/matthewninja/sfw-helper/blob/master/image.png" width="250">
 
-### General Features
+#### General Features
 
 * Established standard of error for filter (45%+)
 *  Three modes users to choose from; Clean, Lewd, Explicit
@@ -26,7 +26,7 @@ Sanitation of webcontent as protection against innappropriate images through the
   * FAQ
   * Contacts list
 
-### Neutralizing Features
+#### Neutralizing Features
 
 * Blocks porn and other adult content
 * Blocks gore involving graphic violence
