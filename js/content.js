@@ -28,11 +28,11 @@ $( document ).ready(function() {
 // and don't update images that have already been updated
 // GOOD @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-// var mainLoopId = setInterval(function(){
-//     // Do your update stuff...
-//     console.log("updating images...");
-//     updateImages();
-// }, 5000);
+var mainLoopId = setInterval(function(){
+    // Do your update stuff...
+    console.log("updating images...");
+    updateImages();
+}, 5000);
 // END @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
