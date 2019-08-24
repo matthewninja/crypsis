@@ -1,3 +1,5 @@
+// GOOD @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 let images = document.getElementsByTagName('img');
 
 function updateImages() {
@@ -8,21 +10,33 @@ function updateImages() {
     });
   }
 }
+// END @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 // when page first loads, update images.
+// GOOD @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 $( document ).ready(function() {
   updateImages();
 });
+// END @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 // the page might load new images dynamically
 // so periodically update images
 // TODO: only run this if new images are loaded
 // and don't update images that have already been updated
-var mainLoopId = setInterval(function(){
-    // Do your update stuff...
-    console.log("updating images...");
-    updateImages();
-}, 5000);
+// GOOD @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// var mainLoopId = setInterval(function(){
+//     // Do your update stuff...
+//     console.log("updating images...");
+//     updateImages();
+// }, 5000);
+// END @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
 // function getImages() {
 //   return new Promise((resolve, reject) => {
 //     let images = $("img");
