@@ -49,10 +49,14 @@ Jenny Wu: Project Lead [:notebook:]
 [Github](https://github.com/jennywwei) - [LinkedIn](https://www.linkedin.com/in/jenny-wu-1641b811b/)
 
 Eric Rabiner: Software Engineer [:computer:]
-[Github](https://github.com/jennywwei) - [LinkedIn](https://www.linkedin.com/in/ericrabiner/)
+[Github](https://github.com/ericrabiner) - [LinkedIn](https://www.linkedin.com/in/ericrabiner/)
 
 Fardeen Chowdhury: UX Designer [:pencil2:]
-[Github](https://github.com/jennywwei) - [LinkedIn](https://www.linkedin.com/in/fardeen-chowdhury/)
+[Github](https://github.com/peppermyangus) - [LinkedIn](https://www.linkedin.com/in/fardeen-chowdhury/)
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+| [<img src="https://avatars3.githubusercontent.com/u/44846748?s=400&v=4" width="75px;"/><br /><sub>Eric Rabiner</sub>][Github](https://github.com/ericrabiner)[LinkedIn](https://www.linkedin.com/in/ericrabiner/) | [<img src="https://avatars.githubusercontent.com/u/1242621?v=3" width="75px;"/><br /><sub>Radimir Bitsov</sub>](http://radibit.com)<br />[📖](https://github.com/stefanjudis/credits/commits?author=radibit) [💻](https://github.com/stefanjudis/credits/commits?author=radibit) | 
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 
 ## Contributing
