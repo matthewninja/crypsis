@@ -53,7 +53,8 @@ Jenny Wu: Project Lead [:notebook:]
 Fardeen Chowdhury: UX Designer [:pencil2:]
 [Github](https://github.com/peppermyangus) - [LinkedIn](https://www.linkedin.com/in/fardeen-chowdhury/)
 
-| [<img src="https://avatars3.githubusercontent.com/u/44846748?s=400&v=4" width="50px;"/><br /><sub>Eric Rabiner</sub>](https://www.linkedin.com/in/ericrabiner/)<br />[Github](https://github.com/ericrabiner) [LinkedIn](https://www.linkedin.com/in/ericrabiner/) | [<img src="https://avatars0.githubusercontent.com/u/23428969?s=400&v=4" width="50px;"/><br /><sub>Fardeen Chowdhury</sub>](https://www.linkedin.com/in/fardeen-chowdhury/)<br />[Github](https://github.com/peppermyangus) [LinkedIn](https://www.linkedin.com/in/fardeen-chowdhury/) | 
+| [<img src="https://avatars3.githubusercontent.com/u/44846748?s=400&v=4" width="50px;"/><br /><sub>Eric Rabiner</sub>](https://www.linkedin.com/in/ericrabiner/)<br />[Github](https://github.com/ericrabiner) [LinkedIn](https://www.linkedin.com/in/ericrabiner/) | [<img src="https://avatars0.githubusercontent.com/u/23428969?s=400&v=4" width="50px;"/><br /><sub>Fardeen Chowdhury</sub>](https://www.linkedin.com/in/fardeen-chowdhury/)<br />[Github](https://github.com/peppermyangus) [LinkedIn](https://www.linkedin.com/in/fardeen-chowdhury/) | [<img src="https://avatars0.githubusercontent.com/u/14874215?s=400&v=4" width="50px;"/><br /><sub>Matthew hAM</sub>](https://www.linkedin.com/in/matthewninja/)<br />[Github](https://github.com/matthewninja) [LinkedIn](https://www.linkedin.com/in/matthewninja/) | 
+
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
