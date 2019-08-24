@@ -27,17 +27,7 @@ Sanitation of webcontent as protection against innappropriate images through the
 
 ## Installation
 
-OS X & Linux:
-
-```sh
-npm install my-crazy-module --save
-```
-
-Windows:
-
-```sh
-edit autoexec.bat
-```
+[Access the page of Chrome extensions] (chrome://extensions/), check off 'Developer Mode'
 
 ### Filter Configuration
 
