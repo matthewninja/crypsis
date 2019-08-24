@@ -28,7 +28,7 @@ TODO: Write history
 
 ## Credits
 
-TODO: Write credits
+(https://github.com/matthewninja "Matthew's Git link")
 
 ## License
 
