@@ -48,6 +48,7 @@ Matthew Ham: Solutions Architect [:computer:]
 Jenny Wu: Project Lead [:notebook:]
 [Github](https://github.com/jennywwei) - [LinkedIn](https://www.linkedin.com/in/jenny-wu-1641b811b/)
 
+| [<img src="https://avatars3.githubusercontent.com/u/44846748?s=400&v=4" width="25px;"] | 
 Eric Rabiner: Software Engineer [:computer:]
 [Github](https://github.com/ericrabiner) - [LinkedIn](https://www.linkedin.com/in/ericrabiner/)
 
