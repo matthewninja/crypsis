@@ -18,6 +18,17 @@ for(let i = 0; i < images.length; i++) {
 const img = document.getElementById('img');
 console.log("HEllo")
 
+function getImages() {
+  return new Promise((resolve, reject) => {
+    resolve("Hello");
+
+  })
+}
+
+getImages().then((msg) => {
+  console.log(msg)
+})
+
 // Load the model.
 // mobilenet.load().then(model => {
 //   // Classify the image.
