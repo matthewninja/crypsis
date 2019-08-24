@@ -5,6 +5,7 @@ Chrome extension to make web content SFW
 ## Motivation 
 (1) Allowing access to sites that may contain NSFW by blocking out only innappropriate images through replacement. Usage in public administrative environments 
 (2)
+
 ##Installation
 
 TODO: Describe the installation process
