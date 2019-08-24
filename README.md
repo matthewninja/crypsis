@@ -72,7 +72,7 @@ npm test
 <p>
     <img src="https://avatars0.githubusercontent.com/u/23428969?s=400&v=4" width="75">
    
-   Fardeen Chowdhury: UX Designer [:pencil2:] 
+   Fardeen Chowdhury: UX/UI Designer [:pencil2:] 
    [Github](https://github.com/peppermyangus) - [LinkedIn](https://www.linkedin.com/in/fardeen-chowdhury/)
 </p>
 <p>
