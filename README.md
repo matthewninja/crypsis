@@ -1,5 +1,5 @@
 # sfw-helper <img src="https://github.com/matthewninja/sfw-helper/blob/master/LogoP1.png" width="25">
-Chrome extension to make web content SFW
+Chrome extension to make web content SFW while still allowing access to the site.
 
 
 ## Motivation 
