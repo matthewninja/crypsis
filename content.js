@@ -14,4 +14,14 @@ let srcList = [];
 for(let i = 0; i < images.length; i++) {
     srcList.push(images[i].src);
 }
-console.log(srcList);
+// console.log(srcList);
+const img = document.getElementById('img');
+
+// Load the model.
+mobilenet.load().then(model => {
+  // Classify the image.
+  model.classify(img).then(predictions => {
+    console.log('Predictions: ');
+    console.log(predictions);
+  });
+});
