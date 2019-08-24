@@ -34,11 +34,13 @@ Sanitation of webcontent as protection against innappropriate images through the
 
 ## Installation
 
+#### Download 
+
 Access the page of Chrome extensions (chrome://extensions/) and check off 'Developer Mode'
 
 Load unpacked and select file
 
-To activate:
+#### Activate
 
 [Visit the Extension Webstore](https://chrome.google.com/webstore/category/extensions) 
 
