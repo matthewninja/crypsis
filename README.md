@@ -50,7 +50,7 @@ npm test
 </p>
 
 <p>
-    <img src="https://avatars0.githubusercontent.com/u/14874215?s=400&v=4" width="75">
+    <img src="https://avatars1.githubusercontent.com/u/54465230?s=400&v=4" width="75">
    
    Jenny Wu: Project Lead [:notebook:] 
    [Github](https://github.com/jennywwei) - [LinkedIn](https://www.linkedin.com/in/jenny-wu-1641b811b/)
