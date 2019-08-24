@@ -1,10 +1,52 @@
-let images = document.getElementsByTagName('img');
+// let images = document.getElementsByTagName('img');
+let images = $("img");
+let processedImages = [];
+let safeSrc = ["./images/cat1.jpg", "./images/cat2.jpg", "./images/cat3.jpg"];
+
+// console.log(images)
+// function diff(a) {
+//   return this.filter(function(i) {return a.indexOf(i) < 0;});
+// };
+
+// function getDifference {
+//   let diffArr = [];
+//   for (let i = 0; i < images.length; i++) {
+//     for (let j = 0; j < processedImages.length; j++) {
+//       if (images[i] == processedImages[j]) {
+
+//       }
+//     }
+//   }
+// }
+
 
 function updateImages() {
-  for(let i = 0; i < images.length; i++){
+  // let imagesToUpdate = [];
+  // for (let i = 0; i < images.length; i++) {
+  //   let isSafe = false;
+  //   let done = false;
+  //   // console.log(imagesToUpdate);
+  //   // console.log("safe:" , safeSrc);
+  //   for (let j = 0; j < safeSrc.length && !done; j++) {
+  //     // console.log(safeSrc[j] )
+  //     // console.log(images[i].src)
+  //     // let imagesSrc = images[i].src.replace(/C:\\fakepath\\/i, '')
+  //     // console.log(imagesSrc)
+  //     if (images[i].src.match(safeSrc[j])) {
+  //       isSafe = true;
+  //       done = true;
+  //     }
+  //   }
+  //   if (!isSafe) {
+  //     imagesToUpdate.push(images[i]);
+  //   }
+  // }
+  let imagesToUpdate = images;
+
+  for(let i = 0; i < imagesToUpdate.length; i++){
     chrome.runtime.sendMessage({msg: 'image', index: i}, function({data, index}){
-      images[index].src = data;
-      images[index].srcset = data;
+      imagesToUpdate[index].src = data;
+      imagesToUpdate[index].srcset = data;
     });
   }
 }
