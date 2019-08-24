@@ -8,6 +8,8 @@ Chrome extension to make web content SFW while still allowing access to the site
 
 ## Features
 
+<img src="https://github.com/matthewninja/sfw-helper/blob/master/image.png" width="50">
+
 ### General Features
 
 * Established standard of error for filter (45%+)
@@ -53,6 +55,9 @@ Describe how to install all development dependencies and how to run an automated
 make install
 npm test
 ```
+
+## Future Expansion
+
 
 ## Credit
 <p float="left">
