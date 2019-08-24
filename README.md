@@ -21,7 +21,7 @@ Sanitation of webcontent as protection against innappropriate images through the
    * Selectively restricting keywords
    * Blocking manual input user-selected domains
 * Password protected user-settings
-* Registered accounts to be ued on multiple devices
+* Registered accounts to be used on multiple devices
 * Help/Documentation Support
   * FAQ
   * Contacts list
