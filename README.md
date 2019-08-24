@@ -41,6 +41,8 @@ npm test
     * Work in progress
 
 ## Credit
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+
 
 Matthew Ham: Solutions Architect [:computer:]
 [Github](https://github.com/matthewninja) - [LinkedIn](https://www.linkedin.com/in/matthewninja/)
@@ -55,10 +57,7 @@ Eric Rabiner: Software Engineer [:computer:]
 Fardeen Chowdhury: UX Designer [:pencil2:]
 [Github](https://github.com/peppermyangus) - [LinkedIn](https://www.linkedin.com/in/fardeen-chowdhury/)
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-| ![<img src="https://avatars3.githubusercontent.com/u/44846748?s=400&v=4" width="75px;"]
-Eric Rabiner
-[Github](https://github.com/ericrabiner) - [LinkedIn](https://www.linkedin.com/in/ericrabiner/) |
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 
