@@ -65,7 +65,7 @@ npm test
 ## Credit
 <p float="left">
 <p>
-    <img src="https://avatars0.githubusercontent.com/u/14874215?s=400&v=4" width="75">
+    <img src="https://www.linkedin.com/in/matthewninja/detail/photo/" width="75">
    
    Matthew Ham: Solutions Architect [:computer:] 
    [Github](https://github.com/matthewninja) - [LinkedIn](https://www.linkedin.com/in/matthewninja/)
