@@ -7,21 +7,22 @@ let model = document.createElement('script');
 model.src = 'https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0';
 document.getElementsByTagName("head")[0].appendChild(model);
 
-// get all of the images on the page
-console.log("src list of images:");
-let images = document.getElementsByTagName('img'); 
-let srcList = [];
-for(let i = 0; i < images.length; i++) {
-    srcList.push(images[i].src);
-}
-// console.log(srcList);
-const img = document.getElementById('img');
-console.log("HEllo")
+// // get all of the images on the page
+// console.log("src list of images:");
+// let images = document.getElementsByTagName('img'); 
+// let srcList = [];
+// for(let i = 0; i < images.length; i++) {
+//     srcList.push(images[i].src);
+// }
+// // console.log(srcList);
+// const img = document.getElementById('img');
+// console.log("HEllo")
 
 function getImages() {
   return new Promise((resolve, reject) => {
-    resolve("Hello");
-
+    let images = $("img");
+    console.log(images)
+    resolve();
   })
 }
 
