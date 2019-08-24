@@ -28,7 +28,7 @@ TODO: Write history
 
 ## Credits
 
-[Matthew Ham: Solutions Architect] (https://github.com/matthewninja)
+[Matthew Ham: Solutions Architect](https://github.com/matthewninja)
 
 ## License
 
