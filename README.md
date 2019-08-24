@@ -54,7 +54,7 @@ Fardeen Chowdhury: UX Designer [:pencil2:]
 
 <p>
     <img src="https://avatars3.githubusercontent.com/u/44846748?s=400&v=4" alt>
-    <em>Eric Rabiner[Github](https://github.com/ericrabiner) [LinkedIn](https://www.linkedin.com/in/ericrabiner/)</em>
+    Eric Rabiner [Github](https://github.com/ericrabiner) [LinkedIn](https://www.linkedin.com/in/ericrabiner/)
 </p>
 
 <p float="left">
