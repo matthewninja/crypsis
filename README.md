@@ -52,8 +52,13 @@ Jenny Wu: Project Lead [:notebook:]
 Fardeen Chowdhury: UX Designer [:pencil2:]
 [Github](https://github.com/peppermyangus) - [LinkedIn](https://www.linkedin.com/in/fardeen-chowdhury/)
 
+<p>
+    <img src="https://avatars3.githubusercontent.com/u/44846748?s=400&v=4" alt>
+    <em>Eric Rabiner[Github](https://github.com/ericrabiner) [LinkedIn](https://www.linkedin.com/in/ericrabiner/)</em>
+</p>
+
 <p float="left">
-  <img src="https://avatars3.githubusercontent.com/u/44846748?s=400&v=4" width="100" <sub>Eric Rabiner</sub>](https://www.linkedin.com/in/ericrabiner/)<br />[Github](https://github.com/ericrabiner) [LinkedIn](https://www.linkedin.com/in/ericrabiner/) />
+  <img src="https://avatars3.githubusercontent.com/u/44846748?s=400&v=4" width="100" />
   <img src="https://avatars0.githubusercontent.com/u/23428969?s=400&v=4" width="100" /> 
   <img src="https://avatars0.githubusercontent.com/u/14874215?s=400&v=4" width="100" />
 </p>
