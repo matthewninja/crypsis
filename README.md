@@ -3,7 +3,7 @@ Chrome extension to make web content SFW
 
 
 ## Motivation 
-(1) Sanitiation of webcontent as protection against innappropriate images. For use in public administrative, professional, and parental environments.
+(1) Sanitation of webcontent as protection against innappropriate images through the replacement by a harmless image. For use in public administrative, professional, and parental environments.
 (2) User-chosen censorship of multimedia as protection against trigger-sensitive content. 
 
 ## Installation
