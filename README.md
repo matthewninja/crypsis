@@ -28,7 +28,7 @@ TODO: Write history
 
 ## Credits
 
-| [<img src="https://avatars0.githubusercontent.com/u/14874215?s=400&v=4" width="75px;"/><br /><sub>Matthew Ham</sub>]<br />(https://github.com/matthewninja) [💻] | 
+| [<img src="https://avatars0.githubusercontent.com/u/14874215?s=400&v=4" width="75px;"/><br /><sub>Matthew Ham</sub>]<br />(https://github.com/matthewninja) [💻] | [<img src="https://avatars0.githubusercontent.com/u/14874215?s=400&v=4" width="75px;"/><br /><sub>Jenny Wu</sub>](https://github.com/jennywwei)<br />[💻](https://github.com/jennywwei) | 
 
 ## License
 
