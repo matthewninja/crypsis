@@ -1,10 +1,27 @@
-# sfw-helper
-Chrome extension to make web content SFW
+# sfw-helper <img src="https://github.com/matthewninja/sfw-helper/blob/master/LogoP1.png" width="25">
+Chrome extension to make web content SFW while still allowing access to the site.
 
 
 ## Motivation 
 (1) Sanitation of webcontent as protection against innappropriate images through the replacement by a harmless image. For use in public administrative, professional, and parental environments.
 (2) User-chosen censorship of multimedia as protection against trigger-sensitive content. 
+
+## Features
+
+### General Features
+
+* Established standard of error for filter (45%+)
+*  Three modes users to choose from; Clean, Lewd, Explicit
+   * Clean: No risk revealed at all, all classified risk is replaced
+   * Lewd: Only explicit images are blocked, risky images allowed
+   * Explicit: User based select image filter, in other words, some types of explicit is allowed based on user preference
+* Password protected
+
+### Neutralizing Features
+
+* Blocks porn and other adult content
+* Blocks gore involving graphic violence
+
 
 ## Installation
 
@@ -19,6 +36,8 @@ Windows:
 ```sh
 edit autoexec.bat
 ```
+
+### Filter Configuration
 
 ## Usage example
 
@@ -35,29 +54,35 @@ make install
 npm test
 ```
 
-## Release History
-
-* 0.0.1
-    * Work in progress
-
 ## Credit
-
-
-Matthew Ham: Solutions Architect [:computer:]
-[Github](https://github.com/matthewninja) - [LinkedIn](https://www.linkedin.com/in/matthewninja/)
-
-Jenny Wu: Project Lead [:notebook:]
-[Github](https://github.com/jennywwei) - [LinkedIn](https://www.linkedin.com/in/jenny-wu-1641b811b/)
-
-Fardeen Chowdhury: UX Designer [:pencil2:]
-[Github](https://github.com/peppermyangus) - [LinkedIn](https://www.linkedin.com/in/fardeen-chowdhury/)
-
 <p float="left">
-  <img src="https://avatars3.githubusercontent.com/u/44846748?s=400&v=4" width="100" <sub>Eric Rabiner</sub>](https://www.linkedin.com/in/ericrabiner/)<br />[Github](https://github.com/ericrabiner) [LinkedIn](https://www.linkedin.com/in/ericrabiner/) />
-  <img src="https://avatars0.githubusercontent.com/u/23428969?s=400&v=4" width="100" /> 
-  <img src="https://avatars0.githubusercontent.com/u/14874215?s=400&v=4" width="100" />
+<p>
+    <img src="https://avatars0.githubusercontent.com/u/14874215?s=400&v=4" width="75">
+   
+   Matthew Ham: Solutions Architect [:computer:] 
+   [Github](https://github.com/matthewninja) - [LinkedIn](https://www.linkedin.com/in/matthewninja/)
 </p>
-| ![<img src="https://avatars3.githubusercontent.com/u/44846748?s=400&v=4" width="50px;"/><br /><sub>Eric Rabiner</sub>](https://www.linkedin.com/in/ericrabiner/)<br />[Github](https://github.com/ericrabiner) [LinkedIn](https://www.linkedin.com/in/ericrabiner/) | ![<img src="https://avatars0.githubusercontent.com/u/23428969?s=400&v=4" width="50px;"/><br /><sub>Fardeen Chowdhury</sub>](https://www.linkedin.com/in/fardeen-chowdhury/)<br />[Github](https://github.com/peppermyangus) [LinkedIn](https://www.linkedin.com/in/fardeen-chowdhury/) | ![<img src="https://avatars0.githubusercontent.com/u/14874215?s=400&v=4" width="50px;"/><br /><sub>Matthew hAM</sub>](https://www.linkedin.com/in/matthewninja/)<br />[Github](https://github.com/matthewninja) [LinkedIn](https://www.linkedin.com/in/matthewninja/) | ![<img src="https://avatars0.githubusercontent.com/u/14874215?s=400&v=4" width="50px;"/><br /><sub> Jenny wu</sub>](https://www.linkedin.com/in/jenny-wu-1641b811b/)<br />[Github](https://github.com/jennywwei) [LinkedIn](https://www.linkedin.com/in/jenny-wu-1641b811b/) | 
+
+<p>
+    <img src="https://avatars1.githubusercontent.com/u/54465230?s=400&v=4" width="75">
+   
+   Jenny Wu: Project Lead [:notebook:] 
+   [Github](https://github.com/jennywwei) - [LinkedIn](https://www.linkedin.com/in/jenny-wu-1641b811b/)
+</p>
+<p>
+    <img src="https://avatars0.githubusercontent.com/u/23428969?s=400&v=4" width="75">
+   
+   Fardeen Chowdhury: UX Designer [:pencil2:] 
+   [Github](https://github.com/peppermyangus) - [LinkedIn](https://www.linkedin.com/in/fardeen-chowdhury/)
+</p>
+<p>
+    <img src="https://avatars3.githubusercontent.com/u/44846748?s=400&v=4" width="75">
+   
+   Eric Rabiner: Software Engineer [:computer:]
+   [Github](https://github.com/ericrabiner) - [LinkedIn](https://www.linkedin.com/in/ericrabiner/)
+</p>
+</p>
+
 
 
 
