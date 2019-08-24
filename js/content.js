@@ -1,54 +1,43 @@
-// let images = document.getElementsByTagName('img');
-let images = $("img");
 let processedImages = [];
 let safeSrc = ["./images/cat1.jpg", "./images/cat2.jpg", "./images/cat3.jpg"];
 
-// console.log(images)
-// function diff(a) {
-//   return this.filter(function(i) {return a.indexOf(i) < 0;});
-// };
-
-// function getDifference {
-//   let diffArr = [];
-//   for (let i = 0; i < images.length; i++) {
-//     for (let j = 0; j < processedImages.length; j++) {
-//       if (images[i] == processedImages[j]) {
-
-//       }
-//     }
-//   }
-// }
-
-
 function updateImages() {
-  // let imagesToUpdate = [];
-  // for (let i = 0; i < images.length; i++) {
-  //   let isSafe = false;
-  //   let done = false;
-  //   // console.log(imagesToUpdate);
-  //   // console.log("safe:" , safeSrc);
-  //   for (let j = 0; j < safeSrc.length && !done; j++) {
-  //     // console.log(safeSrc[j] )
-  //     // console.log(images[i].src)
-  //     // let imagesSrc = images[i].src.replace(/C:\\fakepath\\/i, '')
-  //     // console.log(imagesSrc)
-  //     if (images[i].src.match(safeSrc[j])) {
-  //       isSafe = true;
-  //       done = true;
-  //     }
-  //   }
-  //   if (!isSafe) {
-  //     imagesToUpdate.push(images[i]);
-  //   }
-  // }
-  let imagesToUpdate = images;
-
-  for(let i = 0; i < imagesToUpdate.length; i++){
-    chrome.runtime.sendMessage({msg: 'image', index: i}, function({data, index}){
-      imagesToUpdate[index].src = data;
-      imagesToUpdate[index].srcset = data;
-    });
+  let images = $("img");
+  let imagesToUpdate = [];
+  for (let i = 0; i < images.length; i++) {
+    let isSafe = false;
+    let done = false;
+    for (let j = 0; j < processedImages.length && !done; j++) {
+      if (images[i] == processedImages[j]) {
+        isSafe = true;
+        done = true;
+      }
+    }
+    if (!isSafe) {
+      processedImages.push(images[i]);
+      imagesToUpdate.push(images[i]);
+    }
   }
+
+  mobilenet.load().then(model => {
+    for (let i = 0; i < imagesToUpdate.length; i++) {
+      model.classify(images[i]).then(predictions => {
+        console.log("Predictions: ", predictions);
+        let match = false;
+        for (let i = 0; i < predictions.length; i++) {
+          if (predictions[i].className.match(/cat/g) && predictions[i].probability >= 0.10) {
+            match = true;
+          }
+        }
+        if (match) {
+          chrome.runtime.sendMessage({msg: 'image', index: i}, function({data, index}){
+            imagesToUpdate[index].src = data;
+            imagesToUpdate[index].srcset = data;
+          });
+        }
+      });
+    };
+  });
 }
 
 // when page first loads, update images.
@@ -61,72 +50,6 @@ $( document ).ready(function() {
 // TODO: only run this if new images are loaded
 // and don't update images that have already been updated
 var mainLoopId = setInterval(function(){
-    // Do your update stuff...
-    console.log("updating images...");
+    console.log("Updating images...");
     updateImages();
 }, 5000);
-// function getImages() {
-//   return new Promise((resolve, reject) => {
-//     let images = $("img");
-//     resolve(images);
-//   })
-// }
-
-// getImages().then(images => {
-//   console.log("src list of images:");
-//   console.log(images)
-//   // Load the model.
-//   mobilenet.load().then(model => {
-//     // Classify each image.
-//     for (let i = 0; i < images.length; i++) {
-//       model.classify(images[i]).then(predictions => {
-//         console.log('Predictions: ');
-//         console.log(predictions);
-//         // console.log(predictions.length)
-//         // let match = false;
-//         let match = true;
-//         for (let i = 0; i < predictions.length; i++) {
-//           // if (predictions[i].className.match(/cat/g) && predictions[i].probability >= 0.10) {
-//             match = true;
-//             // if (predictions[i].className.match(/cat/g)) {
-//               // console.log(images[i][0].src)
-//               // console.log(images[0])
-//               // // images[i].attr("src", "./images/dog.jpg")
-//               // // images[i].src = "./images/dog.jpg";
-//               // images[i].remove();
-//               // let temp = $("img").attr("src", "./images/dog.jpg")
-//               // images[i].append(temp)
-//           // }
-//         }
-//         if (match) {
-
-//           chrome.runtime.sendMessage({msg: 'image', index: i}, function({data, index}){
-//             images[i].src = data.link;
-//           });
-
-
-//           // console.log(images[i].src);
-//           // images[i].src = baseUrl;
-//           // console.log(images[i].src);
-//           // var img = new Image(),
-//           // canvas = document.createElement("canvas"),
-//           // ctx = canvas.getContext("2d"),
-//           // src = "./images/dog.jpg";
-//           // img.onload = function() {
-//           //     canvas.width = img.width;
-//           //     canvas.height = img.height;
-//           //     ctx.drawImage(img, 0, 0);
-//           //     // console.log(canvas.toDataUrl());
-//           // }
-//           // // check if //domain.com or http://domain.com is a different origin
-//           // if (/^([\w]+\:)?\/\//.test(src) && src.indexOf(location.host) === -1) {
-//           //   img.crossOrigin = "anonymous"; // or "use-credentials"
-//           // }
-//           // img.src = src;
-//           // images[i] = img;
-
-//         }
-//       });
-//     }
-//   });
-// })
