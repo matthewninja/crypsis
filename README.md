@@ -28,9 +28,8 @@ TODO: Write history
 
 ## Credits
 <!ALL-CONTRIBUTORS-LIST:START -->
-| [<img src="https://avatars0.githubusercontent.com/u/14874215?s=400&v=4" width="75px;"/><br /><sub>Matthew Ham</sub>](https://github.com/matthewninja)<br />[💻](https://github.com/matthewninja) | [<img src="https://avatars0.githubusercontent.com/u/14874215?s=400&v=4" width="75px;"/><br /><sub>Jenny Wu</sub>](https://github.com/jennywwei)<br />[💻](https://github.com/jennywwei) | 
+[<img src="https://avatars0.githubusercontent.com/u/14874215?s=400&v=4" width="75px;"/><br /><sub>Matthew Ham</sub>](https://github.com/matthewninja)<br />[💻](https://github.com/matthewninja) | [<img src="https://avatars0.githubusercontent.com/u/14874215?s=400&v=4" width="75px;"/><br /><sub>Jenny Wu</sub>](https://github.com/jennywwei)<br />[💻](https://github.com/jennywwei) 
 
-| :---: | :---: | :---: | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 ## License
 
