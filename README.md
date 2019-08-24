@@ -54,8 +54,8 @@ Fardeen Chowdhury: UX Designer - [Github](https://github.com/jennywwei) - [Linke
 ## Contributing
 
 1. Fork it (<https://github.com/matthewninja/sfw-helper/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
+2. Create your feature branch: `git checkout -b new-feature`
+3. Commit your changes: `git commit -am 'Add feature'`
+4. Push to the branch: `git push origin new-feature`
 5. Create a new Pull Request
 
