@@ -57,6 +57,7 @@ Eric Rabiner: Software Engineer [:computer:]
 Fardeen Chowdhury: UX Designer [:pencil2:]
 [Github](https://github.com/peppermyangus) - [LinkedIn](https://www.linkedin.com/in/fardeen-chowdhury/)
 
+| [<img src="https://avatars3.githubusercontent.com/u/44846748?s=400&v=4" width="50px;"/><br /><sub>Eric Rabiner</sub>](http://radibit.com)<br />[Github](https://github.com/ericrabiner) [LinkedIn](https://www.linkedin.com/in/ericrabiner/) |
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
