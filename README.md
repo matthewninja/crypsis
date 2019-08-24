@@ -1,6 +1,8 @@
 # sfw-helper
 Chrome extension to make web content SFW
 
+![logo](/images/LogoP1.png)
+
 
 ## Motivation 
 (1) Sanitation of webcontent as protection against innappropriate images through the replacement by a harmless image. For use in public administrative, professional, and parental environments.
