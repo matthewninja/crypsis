@@ -8,6 +8,7 @@ model.src = 'https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0';
 document.getElementsByTagName("head")[0].appendChild(model);
 
 // get all of the images on the page
+
 console.log("src list of images:");
 let images = document.getElementsByTagName('img'); 
 let srcList = [];
