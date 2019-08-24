@@ -8,7 +8,7 @@ Chrome extension to make web content SFW while still allowing access to the site
 
 ## Features
 
-<img src="https://github.com/matthewninja/sfw-helper/blob/master/image.png" width="50">
+<img src="https://github.com/matthewninja/sfw-helper/blob/master/image.png" width="200x200">
 
 ### General Features
 
