@@ -16,14 +16,21 @@ Sanitation of webcontent as protection against innappropriate images through the
    * Clean: No risk revealed at all, all classified risk is replaced
    * Lewd: Only explicit images are blocked, risky images allowed
    * Explicit: User based select image filter, in other words, some types of explicit is allowed based on user preference
+* Option for advanced settings for requested filters
+   * Block entry into sites containing restricted images
+   * Selectively restricting keywords
+   * Blocking manual input user-selected domains
 * Password protected user-settings
 * Registered accounts to be ued on multiple devices
+* Help/Documentation Support
+  * FAQ
+  * Contacts list
 
 ### Neutralizing Features
 
 * Blocks porn and other adult content
 * Blocks gore involving graphic violence
-
+* Blocks innappropriate keywords and phrases
 
 ## Installation
 
