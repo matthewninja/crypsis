@@ -1,7 +1,7 @@
 # sfw-helper
 Chrome extension to make web content SFW
 
-![logo](/images/LogoP1.png)
+![logo](https://drive.google.com/drive/u/0/my-drive)
 
 
 ## Motivation 
