@@ -1,21 +1,17 @@
 {
-  "name": "crypsisserver",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "copy": "cp src/content.js dist/src/ && cp src/imagenet_classes.js dist/src/",
+    "build": "parcel build src/background.js -d dist/src/ -o background && npm run copy",
+    "watch": "npm run copy && parcel watch src/background.js --hmr-hostname localhost -d dist/src/ -o background"
   },
-  "author": "",
-  "license": "ISC",
+  "devDependencies": {
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "clang-format": "^1.2.3",
+    "parcel-bundler": "^1.12.3"
+  },
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "client-sessions": "^0.8.0",
-    "express": "^4.17.1",
-    "express-handlebars": "^3.1.0",
-    "mysql": "^2.17.1",
-    "pg": "^7.12.1",
-    "pg-hstore": "^2.3.3"
+    "@tensorflow/tfjs": "^0.9.1"
   }
 }
