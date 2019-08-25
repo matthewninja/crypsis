@@ -13,7 +13,7 @@ Sanitation of webcontent as protection against innappropriate images through rep
 
 #### General Features
 
-* Established standard of error for filter (45%+)
+* Established standard of error for filter
 * Option for advanced settings for requested filters
    * Block entry into sites containing restricted images
    * Selectively restricting keywords
