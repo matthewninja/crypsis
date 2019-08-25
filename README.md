@@ -1,58 +1,103 @@
-# crypsis <img src="https://github.com/matthewninja/sfw-helper/blob/master/LogoP1.png" width="25">
+# crypsis <img src="https://github.com/matthewninja/sfw-helper/blob/master/Logo2.png" width="50">
 Chrome extension to make web content SFW while still allowing access to the site.
 
 
 ## Motivation 
-(1) Sanitation of webcontent as protection against innappropriate images through the replacement by a harmless image. For use in public administrative, professional, and parental environments.
-(2) User-chosen censorship of multimedia as protection against trigger-sensitive content. 
+Sanitation of webcontent as protection against innappropriate images through replacement by a harmless image. For use in public administrative, professional, and parental environments. The user-chosen censorship of multimedia protects against taboo content. 
 
 ## Features
 
-### General Features
+<p float="left">
+<img src="https://media.giphy.com/media/QYv0BzS6i8GIti8WTz/giphy.gif" width="700" height="500" />
+</p>
 
-* Established standard of error for filter (45%+)
-*  Three modes users to choose from; Clean, Lewd, Explicit
-   * Clean: No risk revealed at all, all classified risk is replaced
-   * Lewd: Only explicit images are blocked, risky images allowed
-   * Explicit: User based select image filter, in other words, some types of explicit is allowed based on user preference
-* Password protected
+#### General Features
 
-### Neutralizing Features
+* Established standard of error for filter
+* Option for advanced settings for requested filters
+   * Block entry into sites containing restricted images
+   * Selectively restricting keywords
+   * Blocking manual input user-selected domains
+* Password protected user-settings
+* Registered accounts to be used on multiple devices
+* Help/Documentation Support
+  * FAQ
+  * Contacts list
+
+#### Neutralizing Features
 
 * Blocks porn and other adult content
 * Blocks gore involving graphic violence
-
+* Blocks innappropriate keywords and phrases
 
 ## Installation
 
-OS X & Linux:
+#### Download 
 
-```sh
-npm install my-crazy-module --save
+1.  Access the page of Chrome extensions (chrome://extensions/)
+
+2. Enable **Developer Mode**
+
+3. Click **Load unpacked** 
+
+4. Select file
+
+#### Activation
+
+1. [Visit the Extension Webstore](https://chrome.google.com/webstore/category/extensions) 
+
+2. Search **Crysis** 
+
+3. Select **Add to Chrome**
+
+## Usage
+
+#### Image Replacement
+
+Through the utilization of Tensorflow models and creating neural networks, when an undesirable image is detected, it is replaced by an appropriate image
+
 ```
-
-Windows:
-
-```sh
-edit autoexec.bat
+if (predictions[i].className.match(/cat/g) && predictions[i].probability >= 0.50) {
+            images[i].src = "./images/dog.jpg";
+ }
 ```
+*Here, once the probability of the image being a cat is greater than 50%, it is replaced with an image of a dog*
 
-### Filter Configuration
+#### Image Updates
 
-## Usage example
+The page might load new images and ads dynamically, use a loop to periodically update images.
 
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
-
-_For more examples and usage, please refer to the [Wiki][wiki]._
-
-## Development setup
-
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
-
-```sh
-make install
-npm test
 ```
+var mainLoopId = setInterval(function(){
+    console.log("updating images...");
+    updateImages();
+}, 5000);
+```
+*Runs only when new images are loaded, otherwise, no updates and no new replacements*
+
+## Future Expansion
+
+Additional analysis of potential bias in sources through NLP and cultural/political association
+
+#### Tech Updates
+
+Incorporate NLP to specify restricted content, eg. Select keywords
+
+#### Business Development
+
+Personal plan for family/individual use
+  * Account sign-in on multiple devices
+
+Enterprise subscription based plan for large institutions
+  * Set-up for many users
+  
+## Contributing
+
+1. Fork it (<https://github.com/matthewninja/sfw-helper/fork>)
+2. Create your feature branch: `git checkout -b new-feature`
+3. Commit your changes: `git commit -am 'Add feature'`
+4. Push to the branch: `git push origin new-feature`
+5. Create a new Pull Request
 
 ## Credit
 <p float="left">
@@ -64,11 +109,12 @@ npm test
 </p>
 
 <p>
-    <img src="https://avatars1.githubusercontent.com/u/54465230?s=400&v=4" width="75">
+    <img src="https://avatars3.githubusercontent.com/u/44846748?s=400&v=4" width="75">
    
-   Jenny Wu: Project Lead [:notebook:] 
-   [Github](https://github.com/jennywwei) - [LinkedIn](https://www.linkedin.com/in/jenny-wu-1641b811b/)
+   Eric Rabiner: Software Developer [:computer:]
+   [Github](https://github.com/ericrabiner) - [LinkedIn](https://www.linkedin.com/in/ericrabiner/)
 </p>
+
 <p>
     <img src="https://avatars0.githubusercontent.com/u/23428969?s=400&v=4" width="75">
    
@@ -76,21 +122,16 @@ npm test
    [Github](https://github.com/peppermyangus) - [LinkedIn](https://www.linkedin.com/in/fardeen-chowdhury/)
 </p>
 <p>
-    <img src="https://avatars3.githubusercontent.com/u/44846748?s=400&v=4" width="75">
+    <img src="https://avatars1.githubusercontent.com/u/54465230?s=400&v=4" width="75">
    
-   Eric Rabiner: Software Engineer [:computer:]
-   [Github](https://github.com/ericrabiner) - [LinkedIn](https://www.linkedin.com/in/ericrabiner/)
+   Jenny Wu: Project Lead [:notebook:] 
+   [Github](https://github.com/jennywwei) - [LinkedIn](https://www.linkedin.com/in/jenny-wu-1641b811b/)
 </p>
 </p>
 
+### Achievements
 
+Original goal was to minimize the model to increase speed and performance. A trade-off was made in reducing 3.5 GB of RAM for a 0.4% drop in accuracy in correctly classifying NSFW photos. 
 
-
-## Contributing
-
-1. Fork it (<https://github.com/matthewninja/sfw-helper/fork>)
-2. Create your feature branch: `git checkout -b new-feature`
-3. Commit your changes: `git commit -am 'Add feature'`
-4. Push to the branch: `git push origin new-feature`
-5. Create a new Pull Request
+Speed is a priority in minimizing exposure to indecent imagery, will compensate by increasing the refinement and thereby escalating the sensitivity of the model.
 
