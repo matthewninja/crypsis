@@ -95,11 +95,12 @@ Enterprise subscription based plan for large institutions
 </p>
 
 <p>
-    <img src="https://avatars1.githubusercontent.com/u/54465230?s=400&v=4" width="75">
+    <img src="https://avatars3.githubusercontent.com/u/44846748?s=400&v=4" width="75">
    
-   Jenny Wu: Project Lead [:notebook:] 
-   [Github](https://github.com/jennywwei) - [LinkedIn](https://www.linkedin.com/in/jenny-wu-1641b811b/)
+   Eric Rabiner: Software Engineer [:computer:]
+   [Github](https://github.com/ericrabiner) - [LinkedIn](https://www.linkedin.com/in/ericrabiner/)
 </p>
+
 <p>
     <img src="https://avatars0.githubusercontent.com/u/23428969?s=400&v=4" width="75">
    
@@ -107,10 +108,10 @@ Enterprise subscription based plan for large institutions
    [Github](https://github.com/peppermyangus) - [LinkedIn](https://www.linkedin.com/in/fardeen-chowdhury/)
 </p>
 <p>
-    <img src="https://avatars3.githubusercontent.com/u/44846748?s=400&v=4" width="75">
+    <img src="https://avatars1.githubusercontent.com/u/54465230?s=400&v=4" width="75">
    
-   Eric Rabiner: Software Engineer [:computer:]
-   [Github](https://github.com/ericrabiner) - [LinkedIn](https://www.linkedin.com/in/ericrabiner/)
+   Jenny Wu: Project Lead [:notebook:] 
+   [Github](https://github.com/jennywwei) - [LinkedIn](https://www.linkedin.com/in/jenny-wu-1641b811b/)
 </p>
 </p>
 
