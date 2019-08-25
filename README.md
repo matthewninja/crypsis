@@ -91,7 +91,7 @@ Enterprise subscription based plan for large institutions
 <p>
     <img src="https://avatars3.githubusercontent.com/u/44846748?s=400&v=4" width="75">
    
-   Eric Rabiner: Software Engineer [:computer:]
+   Eric Rabiner: Software Developer [:computer:]
    [Github](https://github.com/ericrabiner) - [LinkedIn](https://www.linkedin.com/in/ericrabiner/)
 </p>
 
