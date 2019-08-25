@@ -63,7 +63,7 @@ if (predictions[i].className.match(/cat/g) && predictions[i].probability >= 0.50
 ```
 *Here, once the probability of the image being a cat is greater than 50%, it is replaced with an image of a dog*
 
-#### Image Updating
+#### Image Updates
 
 The page might load new images and ads dynamically, use a loop to periodically update images.
 
