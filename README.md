@@ -3,7 +3,7 @@ Chrome extension to make web content SFW while still allowing access to the site
 
 
 ## Motivation 
-Sanitation of webcontent as protection against innappropriate images through the replacement by a harmless image. For use in public administrative, professional, and parental environments. On the personal level, user-chosen censorship of multimedia as protection against trigger-sensitive content. 
+Sanitation of webcontent as protection against innappropriate images through the replacement by a harmless image. For use in public administrative, professional, and parental environments. The user-chosen censorship of multimedia protect against taboo content. 
 
 ## Features
 
@@ -12,10 +12,6 @@ Sanitation of webcontent as protection against innappropriate images through the
 #### General Features
 
 * Established standard of error for filter (45%+)
-*  Three modes users to choose from; Clean, Lewd, Explicit
-   * Clean: No risk revealed at all, all classified risk is replaced
-   * Lewd: Only explicit images are blocked, risky images allowed
-   * Explicit: User based select image filter, in other words, some types of explicit is allowed based on user preference
 * Option for advanced settings for requested filters
    * Block entry into sites containing restricted images
    * Selectively restricting keywords
@@ -36,17 +32,21 @@ Sanitation of webcontent as protection against innappropriate images through the
 
 #### Download 
 
-Access the page of Chrome extensions (chrome://extensions/) and turn on 'Developer Mode'
+Access the page of Chrome extensions (chrome://extensions/)
 
-Load unpacked and select file
+Enable 'Developer Mode'
+
+Click [Load unpacked] 
+
+Select file
 
 #### Activate
 
 [Visit the Extension Webstore](https://chrome.google.com/webstore/category/extensions) 
 
-Search *Crysis* and select 'Add to Chrome'
+Search *Crysis* 
 
-### Filter Configuration
+Select 'Add to Chrome'
 
 ## Usage example
 
@@ -65,6 +65,19 @@ npm test
 
 ## Future Expansion
 
+Additional analysis of potential bias in sources through NLP and cultural/political association
+
+#### Tech Updates
+
+Incorporate NLP to specify restricted content, eg. 
+
+#### Business Development
+
+Personal plan for family/individual use
+  * Account sign-in on multiple devices
+
+Enterprise subscription based plan for large institutions
+  * Set-up for many users
 
 ## Credit
 <p float="left">
@@ -76,11 +89,12 @@ npm test
 </p>
 
 <p>
-    <img src="https://avatars1.githubusercontent.com/u/54465230?s=400&v=4" width="75">
+    <img src="https://avatars3.githubusercontent.com/u/44846748?s=400&v=4" width="75">
    
-   Jenny Wu: Project Lead [:notebook:] 
-   [Github](https://github.com/jennywwei) - [LinkedIn](https://www.linkedin.com/in/jenny-wu-1641b811b/)
+   Eric Rabiner: Software Engineer [:computer:]
+   [Github](https://github.com/ericrabiner) - [LinkedIn](https://www.linkedin.com/in/ericrabiner/)
 </p>
+
 <p>
     <img src="https://avatars0.githubusercontent.com/u/23428969?s=400&v=4" width="75">
    
@@ -88,10 +102,10 @@ npm test
    [Github](https://github.com/peppermyangus) - [LinkedIn](https://www.linkedin.com/in/fardeen-chowdhury/)
 </p>
 <p>
-    <img src="https://avatars3.githubusercontent.com/u/44846748?s=400&v=4" width="75">
+    <img src="https://avatars1.githubusercontent.com/u/54465230?s=400&v=4" width="75">
    
-   Eric Rabiner: Software Engineer [:computer:]
-   [Github](https://github.com/ericrabiner) - [LinkedIn](https://www.linkedin.com/in/ericrabiner/)
+   Jenny Wu: Project Lead [:notebook:] 
+   [Github](https://github.com/jennywwei) - [LinkedIn](https://www.linkedin.com/in/jenny-wu-1641b811b/)
 </p>
 </p>
 
