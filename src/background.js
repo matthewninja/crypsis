@@ -73,7 +73,7 @@ class CrypsisEngine {
       })
     }
     if (topkIndices[0] != 2)
-      safe = false;
+      safe = true;
     return {
         "safe": safe,
         "classes": topClassesAndProbs
@@ -99,37 +99,44 @@ class CrypsisEngine {
 
   async analyzeImage(src) {
 
-    if (!this.model) {
-      setTimeout(() => { this.analyzeImage(src) }, 5000);
-      return;
-    }
-    let res;
-    let safe = true;
-    let meta = this.imageRequests[src];
-    if (meta && meta.tabId) {
-      if (!meta.predictions) {
-        const img = await this.loadImage(src);
-        if (img) {
-          res = await this.predict(img);
-          meta.predictions = res.classes;
-          console.log(res);
-        }
-      }
-      // it's not safe!
-      if (!Object.keys(res).safe) {
-        console.log("NOT_SAFE: ", meta);
-        chrome.tabs.sendMessage(meta.tabId, {
-          action: 'NOT_SAFE',
-          payload: meta,
-        });
-      }
+    // if (!this.model) {
+    //   setTimeout(() => { this.analyzeImage(src) }, 5000);
+    //   return;
+    // }
+    // let res;
+    // let safe = true;
+    // let meta = this.imageRequests[src];
+    // if (meta && meta.tabId) {
+    //   if (!meta.predictions) {
+    //     const img = await this.loadImage(src);
+    //     if (img) {
+    //       res = await this.predict(img);
+    //       meta.predictions = res.classes;
+    //       console.log(res);
+    //     }
+    //   }
+    //   // it's not safe!
+    //   if (!Object.keys(res).safe) {
+    //     console.log("NOT_SAFE: ", meta);
+    //     chrome.tabs.sendMessage(meta.tabId, {
+    //       action: 'NOT_SAFE',
+    //       payload: meta,
+    //     });
+    //   }
+
+
+
+
       // if (meta.predictions) {
       //   chrome.tabs.sendMessage(meta.tabId, {
       //     action: 'IMAGE_PROCESSED',
       //     payload: meta,
       //   });
       // }
-    }
+
+
+      
+    // }
   }
 }
 

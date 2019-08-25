@@ -1,40 +1,76 @@
 var imageMeta = {};
+var flippers = [];
 
-const crypsis = () => {
+const crypsis = (payload) => {
   const images = document.getElementsByTagName('img');
-  const keys = Object.keys(imageMeta);
-  for(u = 0; u < keys.length; u++) {
-    var url = keys[u];
-    var meta = imageMeta[url];
-    for (i = 0; i < images.length; i++) {
-      var img = images[i];
-      if (img.src === meta.url) {
-        img.src = 'https://i.imgur.com/DZqeyOO.jpg';
-        img.srcset = 'https://i.imgur.com/DZqeyOO.jpg';
-        console.log(img.src + `:\n\n${img.title}\n\n` + JSON.stringify(meta.predictions));
+  console.log("hey!");
+  for (let item of images) {
+    console.log("hi!");
+    if (item.src === payload.url) {
+      console.log("bye!");
+        item.src = 'https://i.imgur.com/ZccahuC.jpg';
+        item.srcset = 'https://i.imgur.com/ZccahuC.jpg';
         // delete keys[u];
         // delete imageMeta[url];
-      }
+      
     }
   }
 }
 
-chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  // if (message && message.payload && message.action === 'IMAGE_PROCESSED') {
-  //   const { payload } = message;
-  //   if (payload && payload.url) {
-  //     imageMeta[payload.url] = payload;
-  //     crypsis();
-  //     console.log(payload);
-  //   }
+  // const keys = Object.keys(imageMeta);
+  // console.log("keys length: ", keys.length);
+  // console.log("images length: ", images.length);
+  // for(u = 0; u < keys.length; u++) {
+  //   var url = keys[u];
+  //   var meta = imageMeta[url];
+  //   // for (i = 0; i < images.length; i++) {
+  //   //   var img = images[i];
+  //   //   console.log(img);
+  //   //   console.log(payload);
+  //   //   // if (img.src === payload.url) {
+  //   //   //   console.log("a4");
+  //   //   //   // console.log(img.src + `:\n\n${img.title}\n\n` + JSON.stringify(meta.predictions));
+  //   //   //   img.src = 'https://i.imgur.com/ZccahuC.jpg';
+  //   //   //   img.srcset = 'https://i.imgur.com/ZccahuC.jpg';
+  //   //   //   // delete keys[u];
+  //   //   //   // delete imageMeta[url];
+  //   //   // }
+  //   // }
   // }
+
+
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message && message.payload && message.action === 'NOT_SAFE') {
     const { payload } = message;
     if (payload && payload.url) {
-
       imageMeta[payload.url] = payload;
-      crypsis();
-      console.log(payload);
+      console.log("a9");
+      crypsis(payload);
+
+      // const images = document.getElementsByTagName('img');
+      // for (let item of images) {
+
+          // console.log(item.id);
+        
+      // }
+      // console.log("a2");
+      // for (u = 0; u < keys.length; u++) {
+      //   console.log("a1");
+      //   var url = keys[u];
+      //   var meta2 = imageMeta[url];
+      //       for (i = 0; i < images.length; i++) {
+      //         var img = images[i];
+      //         if (img.src === meta2.url) {
+      //           console.log("a3");
+      //             img.src = 'https://i.imgur.com/DZqeyOO.jpg';
+      //             img.srcset = 'https://i.imgur.com/DZqeyOO.jpg';
+                
+      //           // delete keys[u];
+      //           // delete imageMeta[url];
+      //         }
+      //       }
+      // }
+
     }
   }
 });

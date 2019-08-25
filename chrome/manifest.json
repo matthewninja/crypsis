@@ -16,9 +16,11 @@
     "webRequestBlocking",
     "<all_urls>",
     "storage",
-    "tabs"
+    "tabs",
+    "https://some-random-api.ml/*"
   ],
   "background": {
+    // "scripts":["src/background.js", "src/bg2.js"],
     "scripts":["src/background.js"],
     "persistent": true
   },
