@@ -3,13 +3,15 @@ Chrome extension to make web content SFW while still allowing access to the site
 
 
 ## Motivation 
-Sanitation of webcontent as protection against innappropriate images through the replacement by a harmless image. For use in public administrative, professional, and parental environments. The user-chosen censorship of multimedia protect against taboo content. 
+Sanitation of webcontent as protection against innappropriate images through replacement by a harmless image. For use in public administrative, professional, and parental environments. The user-chosen censorship of multimedia protects against taboo content. 
 
 ## Features
 
-<img src="https://github.com/matthewninja/sfw-helper/blob/master/Logo.png" width="300">
+<p float="left">
+<img src="https://media.giphy.com/media/QYv0BzS6i8GIti8WTz/giphy.gif" width="700" height="500" />
+</p>
 
-### General Features
+#### General Features
 
 * Established standard of error for filter (45%+)
 * Option for advanced settings for requested filters
@@ -22,7 +24,7 @@ Sanitation of webcontent as protection against innappropriate images through the
   * FAQ
   * Contacts list
 
-### Neutralizing Features
+#### Neutralizing Features
 
 * Blocks porn and other adult content
 * Blocks gore involving graphic violence
@@ -30,38 +32,48 @@ Sanitation of webcontent as protection against innappropriate images through the
 
 ## Installation
 
-### Download 
+#### Download 
 
-Access the page of Chrome extensions (chrome://extensions/)
+1.  Access the page of Chrome extensions (chrome://extensions/)
 
-Enable **Developer Mode**
+2. Enable **Developer Mode**
 
-Click **Load unpacked** 
+3. Click **Load unpacked** 
 
-Select file
+4. Select file
 
-### Activate
+#### Activation
 
-[Visit the Extension Webstore](https://chrome.google.com/webstore/category/extensions) 
+1. [Visit the Extension Webstore](https://chrome.google.com/webstore/category/extensions) 
 
-Search **Crysis** 
+2. Search **Crysis** 
 
-Select **Add to Chrome**
+3. Select **Add to Chrome**
 
-## Usage example
+## Usage
 
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+#### Image Replacement
 
-_For more examples and usage, please refer to the [Wiki][wiki]._
+Through the utilization of Tensorflow models and creating neural networks, when an undesirable image is detected, it is replaced by an appropriate image
 
-## Development setup
-
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
-
-```sh
-make install
-npm test
 ```
+if (predictions[i].className.match(/cat/g) && predictions[i].probability >= 0.50) {
+            images[i].src = "./images/dog.jpg";
+ }
+```
+*Here, once the probability of the image being a cat is greater than 50%, it is replaced with an image of a dog*
+
+#### Image Updates
+
+The page might load new images and ads dynamically, use a loop to periodically update images.
+
+```
+var mainLoopId = setInterval(function(){
+    console.log("updating images...");
+    updateImages();
+}, 5000);
+```
+*Runs only when new images are loaded, otherwise, no updates and no new replacements*
 
 ## Future Expansion
 
@@ -69,7 +81,7 @@ Additional analysis of potential bias in sources through NLP and cultural/politi
 
 #### Tech Updates
 
-Incorporate NLP to specify restricted content, eg. 
+Incorporate NLP to specify restricted content, eg. Select keywords
 
 #### Business Development
 
@@ -78,6 +90,14 @@ Personal plan for family/individual use
 
 Enterprise subscription based plan for large institutions
   * Set-up for many users
+  
+## Contributing
+
+1. Fork it (<https://github.com/matthewninja/sfw-helper/fork>)
+2. Create your feature branch: `git checkout -b new-feature`
+3. Commit your changes: `git commit -am 'Add feature'`
+4. Push to the branch: `git push origin new-feature`
+5. Create a new Pull Request
 
 ## Credit
 <p float="left">
@@ -108,15 +128,4 @@ Enterprise subscription based plan for large institutions
    [Github](https://github.com/jennywwei) - [LinkedIn](https://www.linkedin.com/in/jenny-wu-1641b811b/)
 </p>
 </p>
-
-
-
-
-## Contributing
-
-1. Fork it (<https://github.com/matthewninja/sfw-helper/fork>)
-2. Create your feature branch: `git checkout -b new-feature`
-3. Commit your changes: `git commit -am 'Add feature'`
-4. Push to the branch: `git push origin new-feature`
-5. Create a new Pull Request
 
