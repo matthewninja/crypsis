@@ -51,7 +51,9 @@ Search **Crysis**
 
 Select **Add to Chrome**
 
-## Usage example
+## Usage
+
+#### Image Replacement
 
 Through the utilization of Tensorflow models and creating neural networks, when an undesirable image is detected, it is replaced by an appropriate image
 
@@ -61,6 +63,18 @@ if (predictions[i].className.match(/cat/g) && predictions[i].probability >= 0.50
  }
 ```
 *Here, once the probability of the image being a cat is greater than 50%, it is replaced with an image of a dog*
+
+#### Image Updating
+
+The page might load new images and ads dynamically, So to periodically update images.
+
+```
+var mainLoopId = setInterval(function(){
+    console.log("updating images...");
+    updateImages();
+}, 5000);
+```
+*Runs only when new images are loaded, otherwise, no updates and no new replacements*
 
 ## Development setup
 
