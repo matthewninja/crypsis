@@ -1,4 +1,4 @@
-# crypsis <img src="https://github.com/matthewninja/sfw-helper/blob/master/Logo.png" width="50">
+# crypsis <img src="https://github.com/matthewninja/sfw-helper/blob/master/Logo2.png" width="50">
 Chrome extension to make web content SFW while still allowing access to the site.
 
 
@@ -7,7 +7,7 @@ Sanitation of webcontent as protection against innappropriate images through the
 
 ## Features
 
-<img src="https://github.com/matthewninja/sfw-helper/blob/master/Logo.png" width="250">
+<img src="https://github.com/matthewninja/sfw-helper/blob/master/Logo" width="250">
 
 #### General Features
 
