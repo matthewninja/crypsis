@@ -131,7 +131,7 @@ Enterprise subscription based plan for large institutions
 
 ## Achievements
 
-Original goal was to minimize the model to increase speed and performance. A trade-off was made in reducing 3.5 GB of RAM for a 0.4% drop in accuracy in correctly classifying NSFW photos. MobileNet is used in making the most efficient trade in accuracy and speed.
+Original goal was to minimize the model to increase speed and performance. A trade-off was made in reducing GB of RAM for a slight drop in accuracy in correctly classifying NSFW photos. MobileNet is used in making the most efficient trade in accuracy and speed.
 
 Speed is a priority in minimizing exposure to indecent imagery, will compensate by increasing the refinement and thereby escalating the sensitivity of the model.
 
