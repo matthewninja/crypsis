@@ -52,10 +52,10 @@ Select **Add to Chrome**
 
 Through the utilization of Tensorflow models and creating neural networks, when an undesirable image is detected, it is replaced by an appropriate image
 
-'''
+```
 if (predictions[i].className.match(/cat/g) && predictions[i].probability >= 0.50) {
             images[i].src = "./images/dog.jpg";
-'''
+```
 
 
 _For more examples and usage, please refer to the [Wiki][wiki]._
