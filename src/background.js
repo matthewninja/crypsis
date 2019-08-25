@@ -2,7 +2,7 @@ import 'babel-polyfill';
 import * as tf from '@tensorflow/tfjs';
 import { NSFW_CLASSES } from './nsfw_classes';
 
-let nsfw_model = 'nsfwjs/model.json';
+let nsfw_model = 'src/nsfwjs/model.json';
 
 class BackgroundProcessing {
 
@@ -62,6 +62,11 @@ class BackgroundProcessing {
       topkValues[i] = valuesAndIndices[i].value;
       topkIndices[i] = valuesAndIndices[i].index;
     }
+    if (topkIndices[0] != 2) {
+      return false;
+      
+
+    }
 
     const topClassesAndProbs = [];
     for (let i = 0; i < topkIndices.length; i++) {
@@ -81,7 +86,7 @@ class BackgroundProcessing {
       const img = tf.fromPixels(imgElement).toFloat();
       const offset = tf.scalar(127.5);
       const normalized = img.sub(offset).div(offset);
-      const batched = normalized.reshape([1, IMAGE_SIZE, IMAGE_SIZE, 3]);
+      const batched = normalized.reshape([1, 299, 299, 3]);
       return this.model.predict(batched);
     });
 
@@ -100,19 +105,28 @@ class BackgroundProcessing {
 
     var meta = this.imageRequests[src];
     if (meta && meta.tabId) {
+      console.log("type of meta : " , typeof meta);
       if (!meta.predictions) {
         const img = await this.loadImage(src);
         if (img) {
           meta.predictions = await this.predict(img);
         }
       }
-
-      if (meta.predictions) {
+      // it's not safe!
+      if (!meta.predictions) {
+        var meta = this.imageRequests[src];
+        console.log("NOT_SAFE: ", imageRequests[src].src);
         chrome.tabs.sendMessage(meta.tabId, {
-          action: 'IMAGE_PROCESSED',
+          action: 'NOT_SAFE',
           payload: meta,
         });
       }
+      // if (meta.predictions) {
+      //   chrome.tabs.sendMessage(meta.tabId, {
+      //     action: 'IMAGE_PROCESSED',
+      //     payload: meta,
+      //   });
+      // }
     }
   }
 }

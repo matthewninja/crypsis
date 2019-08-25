@@ -9,19 +9,29 @@ const crypsis = () => {
     for (i = 0; i < images.length; i++) {
       var img = images[i];
       if (img.src === meta.url) {
-        
-        // img.title = img.src + `:\n\n${img.title}\n\n` + JSON.stringify(meta.predictions);
-        delete keys[u];
-        delete imageMeta[url];
+        img.src = 'https://i.imgur.com/DZqeyOO.jpg';
+        img.srcset = 'https://i.imgur.com/DZqeyOO.jpg';
+        console.log(img.src + `:\n\n${img.title}\n\n` + JSON.stringify(meta.predictions));
+        // delete keys[u];
+        // delete imageMeta[url];
       }
     }
   }
 }
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  if (message && message.payload && message.action === 'IMAGE_PROCESSED') {
+  // if (message && message.payload && message.action === 'IMAGE_PROCESSED') {
+  //   const { payload } = message;
+  //   if (payload && payload.url) {
+  //     imageMeta[payload.url] = payload;
+  //     crypsis();
+  //     console.log(payload);
+  //   }
+  // }
+  if (message && message.payload && message.action === 'NOT_SAFE') {
     const { payload } = message;
     if (payload && payload.url) {
+
       imageMeta[payload.url] = payload;
       crypsis();
       console.log(payload);
@@ -29,7 +39,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   }
 });
 
-window.addEventListener('load', setImageTitles, false);
+window.addEventListener('load', crypsis, false);
 
 
 // let processedImages = [];
