@@ -66,7 +66,7 @@ if (predictions[i].className.match(/cat/g) && predictions[i].probability >= 0.50
 
 #### Image Updating
 
-The page might load new images and ads dynamically, So to periodically update images.
+The page might load new images and ads dynamically, use a loop to periodically update images.
 
 ```
 var mainLoopId = setInterval(function(){
