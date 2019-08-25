@@ -13,7 +13,7 @@ Sanitation of webcontent as protection against innappropriate images through rep
 
 #### General Features
 
-* Established standard of error for filter (45%+)
+* Established standard of error for filter
 * Option for advanced settings for requested filters
    * Block entry into sites containing restricted images
    * Selectively restricting keywords
@@ -128,4 +128,10 @@ Enterprise subscription based plan for large institutions
    [Github](https://github.com/jennywwei) - [LinkedIn](https://www.linkedin.com/in/jenny-wu-1641b811b/)
 </p>
 </p>
+
+### Achievements
+
+Original goal was to minimize the model to increase speed and performance. A trade-off was made in reducing 3.5 GB of RAM for a 0.4% drop in accuracy in correctly classifying NSFW photos. 
+
+Speed is a priority in minimizing exposure to indecent imagery, will compensate by increasing the refinement and thereby escalating the sensitivity of the model.
 
