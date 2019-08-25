@@ -75,15 +75,6 @@ var mainLoopId = setInterval(function(){
 ```
 *Runs only when new images are loaded, otherwise, no updates and no new replacements*
 
-## Development setup
-
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
-
-```sh
-make install
-npm test
-```
-
 ## Future Expansion
 
 Additional analysis of potential bias in sources through NLP and cultural/political association
@@ -99,6 +90,14 @@ Personal plan for family/individual use
 
 Enterprise subscription based plan for large institutions
   * Set-up for many users
+  
+## Contributing
+
+1. Fork it (<https://github.com/matthewninja/sfw-helper/fork>)
+2. Create your feature branch: `git checkout -b new-feature`
+3. Commit your changes: `git commit -am 'Add feature'`
+4. Push to the branch: `git push origin new-feature`
+5. Create a new Pull Request
 
 ## Credit
 <p float="left">
@@ -131,13 +130,4 @@ Enterprise subscription based plan for large institutions
 </p>
 
 
-
-
-## Contributing
-
-1. Fork it (<https://github.com/matthewninja/sfw-helper/fork>)
-2. Create your feature branch: `git checkout -b new-feature`
-3. Commit your changes: `git commit -am 'Add feature'`
-4. Push to the branch: `git push origin new-feature`
-5. Create a new Pull Request
 
