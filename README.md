@@ -3,7 +3,7 @@ Chrome extension to make web content SFW while still allowing access to the site
 
 
 ## Motivation 
-Sanitation of webcontent as protection against innappropriate images through the replacement by a harmless image. For use in public administrative, professional, and parental environments. The user-chosen censorship of multimedia protect against taboo content. 
+Sanitation of webcontent as protection against innappropriate images through replacement by a harmless image. For use in public administrative, professional, and parental environments. The user-chosen censorship of multimedia protects against taboo content. 
 
 ## Features
 
