@@ -1,0 +1,50 @@
+<img src="images/Logo.png" id="logoDash">
+<img id="cfcDash" src="images/cfc.png"></img>
+<div id="settingsDash">Settings</div>
+<div class="dashTabs">
+    <div class="dashVal" onclick="hideStuff('filterBox')">Filters</div>
+    <div class="dashVal" onclick="hideStuff('blacklistBox')">Blacklisted</div>
+    <div class="dashVal" onclick="hideStuff('whitelistBox')">Whitelisted</div>
+    <div class="dashVal" onclick="hideStuff('accountBox')">Account</div>
+    <div class="dashVal" onclick="hideStuff('helpBox')">Help</div>
+</div>
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"id="learnMore">Learn more about Crypsis.</a>
+
+<form action="/logout" method="get">
+    <button id="logout" class="btn btn-primary" id="logout" type="submit">Logout</button>
+</form>
+
+<div class="rect">
+    <div id="filterBox" class="dashItem" style="display: block">
+        <div class="rectTitle">Filter</div>
+        <div class="sliders">
+            <label class="sliderTags">How much Jesus?</label>
+            <label for="myRange">None</label>
+            <input type="range" min="1" max="2" value="0" class="slider" id="myRange">
+            <label for="myRange">All</label>
+        </div>
+        {{!-- <div class="sliders">
+            <label class="sliderTags">Cats?</label>
+            <label for="myRange">None</label>
+            <input type="range" min="1" max="2" value="0" class="slider" id="myRange">
+            <label for="myRange">All</label>
+        </div> --}}
+    </div>
+    <div id="blacklistBox" class="dashItem">
+        <div class="rectTitle">Blacklist</div>
+
+    </div>
+    <div id="whitelistBox" class="dashItem">
+        <div class="rectTitle">Whitelist</div>
+
+    </div>
+    <div id="accountBox" class="dashItem">
+        <div class="rectTitle">Account</div>
+
+    </div>
+    <div id="helpBox" class="dashItem">
+        <div class="rectTitle">Help</div>
+
+    </div>
+    
+</div>

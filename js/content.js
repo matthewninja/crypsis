@@ -1,9 +1,11 @@
 let processedImages = [];
-let safeSrc = ["./images/cat1.jpg", "./images/cat2.jpg", "./images/cat3.jpg"];
+// let safeSrc = ["./images/cat1.jpg", "./images/cat2.jpg", "./images/cat3.jpg"];
 
 function updateImages() {
   let images = $("img");
+  // images.fadeToggle();
   let imagesToUpdate = [];
+  let imagesToCheck = [];
   for (let i = 0; i < images.length; i++) {
     let isSafe = false;
     let done = false;
@@ -15,12 +17,27 @@ function updateImages() {
     }
     if (!isSafe) {
       processedImages.push(images[i]);
+      images[i].class = "unsafe"
       imagesToUpdate.push(images[i]);
+      imagesToCheck.push(images[i]);
+      // console.log(images[i].class);
     }
+    
+    // console.log(images)
+    
+    // console.log($(".unsafe"))
+    // console.log($(".unsafe"))
+    // $(".unsafe").fadeOut();
+  }
+  $(".unsafe").fadeToggle();
+  for (let i = 0; i < imagesToUpdate.length; i++) {
+    // console.log(imagesToUpdate[i].src);
+    imagesToUpdate[i].src = "./images/question.jpg";
   }
 
   mobilenet.load().then(model => {
-    for (let i = 0; i < imagesToUpdate.length; i++) {
+    for (let i = 0; i < imagesToCheck.length; i++) {
+      // console.log("hello")
       model.classify(images[i]).then(predictions => {
         console.log("Predictions: ", predictions);
         let match = false;
@@ -31,12 +48,25 @@ function updateImages() {
         }
         if (match) {
           chrome.runtime.sendMessage({msg: 'image', index: i}, function({data, index}){
-            imagesToUpdate[index].src = data;
-            imagesToUpdate[index].srcset = data;
+            // imagesToUpdate[index].style.opacity = 0;
+            // imagesToUpdate[index].style.webkitTransition = "opacity 3s ease-in-out";
+            // imagesToUpdate[index].style.mozTransition = "opacity 3s ease-in-out";
+            // imagesToUpdate[index].style.oTransition = "opacity 3s ease-in-out";
+            // imagesToUpdate[index].style.transition = "opacity 3s ease-in-out";
+            // imagesToUpdate[index].fadeToggle();
+            imagesToCheck[index].src = data;
+            imagesToCheck[index].srcset = data;
+            // imagesToUpdate[index].fadeToggle();
+            // imagesToUpdate[index].style.opacity = 1;
+            // console.log(imagesToUpdate[index])
+            // imagesToUpdate[index].class = "safe";
+            // $(".safe").fadeIn();
+            
           });
         }
       });
     };
+    // images.fadeToggle();
   });
 }
 

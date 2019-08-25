@@ -1,0 +1,362 @@
+body {
+    overflow: hidden;
+}
+
+#logo {
+    width: 520px;
+    height: 326.88px;
+    margin-top: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cfc {
+    width: 310px;
+    height: 43px;
+    top: 355px;
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#box {
+    width: 100%;
+    height: 320px;
+    top: 500px;
+    display: block;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* background-color: green; */
+}
+
+#forgot{
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #37A0C3;
+    margin-top: 5px;
+
+}
+
+#unlock {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #bababa;
+    border: #bababa;
+}
+
+#unlock:hover {
+    background-color: #D7D7D7;
+    border: #D7D7D7;
+}
+
+.signUp {
+    /* display: none; */
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.startButtons {
+    width: 12.5%;
+    background-color: #37A0C3;
+    border: #37A0C3;
+
+    /* display: block; */
+    /* margin-left: 25%; */
+    /* margin-right: auto; */
+    /* text-align: center; */
+}
+
+.buttons {
+    text-align: center;
+    width: 100%;
+    /* margin-left: 100px;
+    padding-left: 100px; */
+}
+
+.startButtons:hover {
+    background-color: #5CB4D1;
+    border: #5CB4D1;
+}
+
+#icantcenterabuttonifihadaguntomyhead {
+    margin-left: 37.5%;
+    text-align: center;
+    margin-right: auto;
+}
+
+#slogan {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 38px;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+    color: #262626;
+}
+
+a:link {
+    color: #37A0C3;
+}
+
+a:visited {
+    color: #37A0C3;
+}
+
+small {
+    text-align: left;
+}
+
+#failed {
+    font-family: Open Sans;
+    /* display: none; */
+    color: red;
+    text-align: center;
+}
+
+#pleaseLogin {
+    margin-top: 5px;
+    text-align: center;
+}
+
+#errorMsg {
+    margin-top: 5px;
+    text-align: center;
+    color: red;
+}
+
+/* DASHBOARD */
+
+#logoDash {
+    position: absolute;
+    width: 92px;
+    height: 57.83px;
+    left: 50px;
+    top: 60px;
+}
+
+#cfcDash {
+    position: absolute;
+    width: 259px;
+    height: 38px;
+    left: 150px;
+    top: 70px;
+}
+
+#settingsDash {
+    position: absolute;
+    width: 210px;
+    height: 71px;
+    left: 100px;
+    top: 157.83px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 71px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #262626;
+
+}
+
+.dashTabs {
+    position: absolute;
+    width: 150px;
+    height: 38px;
+    left: 100px;
+    top: 240px;
+}
+
+.dashVal {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+
+    color: rgba(38, 38, 38, 0.6);
+    margin-top: 5px;
+}
+
+.dashVal:hover {
+    text-decoration: #37A0C3 underline;
+    color: black;
+}
+
+.rect {
+    position: absolute;
+    width: 859px;
+    height: 901px;
+    left: 481px;
+    top: 63px;
+    background: #F7F7F7;
+}
+
+#learnMore {
+    position: absolute;
+    left: 100px;
+    top: 90%;
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #37A0C3;
+}
+
+#signUpNow {
+    color: #37A0C3;
+}
+
+#logout {
+    position: absolute;
+    left: 100px;
+    top: 85%;
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: rgba(38, 38, 38, 0.6);
+}
+
+#logout {
+    color: white;
+    background-color: #bababa;
+    border: #bababa;
+}
+
+#question {
+    position: absolute;
+    left: 40%;
+    top: 5%;
+    width: 20%;
+}
+
+#lost {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 350px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 71px;
+    /* identical to box height */
+
+    align-items: center;
+
+    color: #262626;
+
+}
+
+#help {
+    margin-top: 15px;    
+        
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 38px;
+    align-items: center;
+
+    color: #262626;
+
+}
+
+#helpEmail {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-top: 35px;
+
+}
+
+#recover {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #bababa;
+    border: #bababa;
+    margin-top: 15px;
+}
+
+#recover:hover {
+    background-color: #D7D7D7;
+    border: #D7D7D7;
+}
+
+#goBackForgot {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.dashItem {
+    display: none;
+}
+
+.dashVal:hover {
+    cursor: pointer;
+}
+
+.rectTitle {
+    text-align: center;
+    margin: 15px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 38px;
+    color: #262626;
+
+}
+
+.sliders {
+    text-align: center;
+    /* margin-left: 5%; */
+}
+
+.sliderTags {
+    margin-right: 5px;
+}
