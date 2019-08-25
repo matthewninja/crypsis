@@ -2,9 +2,7 @@ import 'babel-polyfill';
 import * as tf from '@tensorflow/tfjs';
 import { NSFW_CLASSES } from './nsfw_classes';
 
-let MOBILENET_MODEL_PATH = 'nsfwjs/model.json';
-let IMAGE_SIZE = 299; // change this
-let TOPK_PREDICTIONS = 5; // top 10 predictions. will be mapped to logits (probability/confidence)
+let nsfw_model = 'nsfwjs/model.json';
 
 class BackgroundProcessing {
 
@@ -26,8 +24,8 @@ class BackgroundProcessing {
   async loadModel() {
     console.log('Loading model...');
     let startTime = performance.now();
-    this.model = await tf.loadModel(MOBILENET_MODEL_PATH);
-    this.model.predict(tf.zeros([1, IMAGE_SIZE, IMAGE_SIZE, 3])).dispose();
+    this.model = await tf.loadModel(nsfw_model);
+    this.model.predict(tf.zeros([1, 299, 299, 3])).dispose();
 
     let totalTime = Math.floor(performance.now() - startTime);
     console.log(`Model loaded and initialized in ${totalTime}ms...`);
@@ -41,14 +39,9 @@ class BackgroundProcessing {
         resolve(null);
       };
       img.onload = function(e) {
-        // if ((img.height && img.height > 128) || (img.width && img.width > 128)) {
-          // Set image size for tf!
-          img.width = IMAGE_SIZE;
-          img.height = IMAGE_SIZE;
+          img.width = 299;
+          img.height = 299;
           resolve(img);
-        // }
-        // Let's skip all tiny images
-        // resolve(null);
       }
       img.src = src;
     });
@@ -93,7 +86,7 @@ class BackgroundProcessing {
     });
 
     // Convert logits to probabilities and class names.
-    const predictions = await this.getTopKClasses(logits, TOPK_PREDICTIONS);
+    const predictions = await this.getTopKClasses(logits, 5);
     const totalTime = Math.floor(performance.now() - startTime);
     return predictions;
   }
