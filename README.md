@@ -12,7 +12,7 @@ Sanitation of webcontent as protection against innappropriate images through the
 <img src="https://github.com/matthewninja/sfw-helper/blob/jennywwei-patch-credit/Screenshot%202019-08-24%2023.12.13.png" width="550">
 </p>
 
-### General Features
+#### General Features
 
 * Established standard of error for filter (45%+)
 * Option for advanced settings for requested filters
@@ -25,7 +25,7 @@ Sanitation of webcontent as protection against innappropriate images through the
   * FAQ
   * Contacts list
 
-### Neutralizing Features
+#### Neutralizing Features
 
 * Blocks porn and other adult content
 * Blocks gore involving graphic violence
