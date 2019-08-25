@@ -35,21 +35,21 @@ Sanitation of webcontent as protection against innappropriate images through the
 
 ### Download 
 
-- Access the page of Chrome extensions (chrome://extensions/)
+1.  Access the page of Chrome extensions (chrome://extensions/)
 
-- Enable **Developer Mode**
+2. Enable **Developer Mode**
 
-- Click **Load unpacked** 
+3. Click **Load unpacked** 
 
-- Select file
+4. Select file
 
 ### Activate
 
-- [Visit the Extension Webstore](https://chrome.google.com/webstore/category/extensions) 
+1. [Visit the Extension Webstore](https://chrome.google.com/webstore/category/extensions) 
 
-- Search **Crysis** 
+2. Search **Crysis** 
 
-- Select **Add to Chrome**
+3. Select **Add to Chrome**
 
 ## Usage
 
@@ -91,7 +91,7 @@ Additional analysis of potential bias in sources through NLP and cultural/politi
 
 #### Tech Updates
 
-Incorporate NLP to specify restricted content, eg. 
+Incorporate NLP to specify restricted content, eg. Select keywords
 
 #### Business Development
 
