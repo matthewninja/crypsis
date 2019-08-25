@@ -79,6 +79,8 @@ var mainLoopId = setInterval(function(){
 
 Additional analysis of potential bias in sources through NLP and cultural/political association
 
+Adding a key to lock the extension
+
 #### Tech Updates
 
 Incorporate NLP to specify restricted content, eg. Select keywords
