@@ -12,10 +12,6 @@ Sanitation of webcontent as protection against innappropriate images through the
 #### General Features
 
 * Established standard of error for filter (45%+)
-*  Three modes users to choose from; Clean, Lewd, Explicit
-   * Clean: No risk revealed at all, all classified risk is replaced
-   * Lewd: Only explicit images are blocked, risky images allowed
-   * Explicit: User based select image filter, in other words, some types of explicit is allowed based on user preference
 * Option for advanced settings for requested filters
    * Block entry into sites containing restricted images
    * Selectively restricting keywords
