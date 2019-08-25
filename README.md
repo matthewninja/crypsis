@@ -1,4 +1,4 @@
-# crypsis <img src="https://github.com/matthewninja/sfw-helper/blob/master/Logo.png" width="50">
+# crypsis <img src="https://github.com/matthewninja/sfw-helper/blob/master/Logo2.png" width="50">
 Chrome extension to make web content SFW while still allowing access to the site.
 
 
@@ -7,9 +7,9 @@ Sanitation of webcontent as protection against innappropriate images through the
 
 ## Features
 
-<img src="https://github.com/matthewninja/sfw-helper/blob/master/image.png" width="250">
+<img src="https://github.com/matthewninja/sfw-helper/blob/master/Logo.png" width="300">
 
-#### General Features
+### General Features
 
 * Established standard of error for filter (45%+)
 * Option for advanced settings for requested filters
@@ -22,7 +22,7 @@ Sanitation of webcontent as protection against innappropriate images through the
   * FAQ
   * Contacts list
 
-#### Neutralizing Features
+### Neutralizing Features
 
 * Blocks porn and other adult content
 * Blocks gore involving graphic violence
@@ -30,23 +30,23 @@ Sanitation of webcontent as protection against innappropriate images through the
 
 ## Installation
 
-#### Download 
+### Download 
 
 Access the page of Chrome extensions (chrome://extensions/)
 
-Enable 'Developer Mode'
+Enable **Developer Mode**
 
-Click [Load unpacked] 
+Click **Load unpacked** 
 
 Select file
 
-#### Activate
+### Activate
 
 [Visit the Extension Webstore](https://chrome.google.com/webstore/category/extensions) 
 
-Search *Crysis* 
+Search **Crysis** 
 
-Select 'Add to Chrome'
+Select **Add to Chrome**
 
 ## Usage example
 
@@ -91,7 +91,7 @@ Enterprise subscription based plan for large institutions
 <p>
     <img src="https://avatars3.githubusercontent.com/u/44846748?s=400&v=4" width="75">
    
-   Eric Rabiner: Software Engineer [:computer:]
+   Eric Rabiner: Software Developer [:computer:]
    [Github](https://github.com/ericrabiner) - [LinkedIn](https://www.linkedin.com/in/ericrabiner/)
 </p>
 
