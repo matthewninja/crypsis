@@ -9,6 +9,7 @@ Sanitation of webcontent as protection against innappropriate images through rep
 
 <p float="left">
 <img src="https://media.giphy.com/media/jUnF1fSbswux7pMEm9/giphy.gif" width="700" height="500" />
+<img src="https://github.com/matthewninja/sfw-helper/blob/master/ss.gif" width="700" height="500" />
 </p>
 
 #### General Features
