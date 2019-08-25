@@ -9,32 +9,45 @@ const crypsis = () => {
     for (i = 0; i < images.length; i++) {
       var img = images[i];
       if (img.src === meta.url) {
-        img.src = 'https://i.imgur.com/DZqeyOO.jpg';
-        img.srcset = 'https://i.imgur.com/DZqeyOO.jpg';
-        console.log(img.src + `:\n\n${img.title}\n\n` + JSON.stringify(meta.predictions));
-        // delete keys[u];
-        // delete imageMeta[url];
+        // console.log(img.src + `:\n\n${img.title}\n\n` + JSON.stringify(meta.predictions));
+        delete keys[u];
+        delete imageMeta[url];
       }
     }
   }
 }
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  // if (message && message.payload && message.action === 'IMAGE_PROCESSED') {
-  //   const { payload } = message;
-  //   if (payload && payload.url) {
-  //     imageMeta[payload.url] = payload;
-  //     crypsis();
-  //     console.log(payload);
-  //   }
-  // }
   if (message && message.payload && message.action === 'NOT_SAFE') {
     const { payload } = message;
     if (payload && payload.url) {
 
-      imageMeta[payload.url] = payload;
+      const images = document.getElementsByTagName('img');
+      for (let item of images) {
+          console.log(item.id);
+          console.log("a5");
+          item.src = 'https://i.imgur.com/DZqeyOO.jpg';
+          item.srcset = 'https://i.imgur.com/DZqeyOO.jpg';
+      }
+      // console.log("a2");
+      // for (u = 0; u < keys.length; u++) {
+      //   console.log("a1");
+      //   var url = keys[u];
+      //   var meta2 = imageMeta[url];
+      //       for (i = 0; i < images.length; i++) {
+      //         var img = images[i];
+      //         if (img.src === meta2.url) {
+      //           console.log("a3");
+      //             img.src = 'https://i.imgur.com/DZqeyOO.jpg';
+      //             img.srcset = 'https://i.imgur.com/DZqeyOO.jpg';
+                
+      //           // delete keys[u];
+      //           // delete imageMeta[url];
+      //         }
+      //       }
+      // }
+
       crypsis();
-      console.log(payload);
     }
   }
 });

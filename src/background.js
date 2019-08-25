@@ -4,7 +4,7 @@ import { NSFW_CLASSES } from './nsfw_classes';
 
 let nsfw_model = 'src/nsfwjs/model.json';
 
-class BackgroundProcessing {
+class CrypsisEngine {
 
   constructor() {
     this.imageRequests = {};
@@ -22,7 +22,7 @@ class BackgroundProcessing {
   }
 
   async loadModel() {
-    console.log('Loading model...');
+    // console.log('Loading model...');
     let startTime = performance.now();
     this.model = await tf.loadModel(nsfw_model);
     this.model.predict(tf.zeros([1, 299, 299, 3])).dispose();
@@ -48,6 +48,7 @@ class BackgroundProcessing {
   }
 
   async getTopKClasses(logits, topK) {
+    let safe = true;
     let values = await logits.data();
     let valuesAndIndices = [];
     for (let i = 0; i < values.length; i++) {
@@ -62,11 +63,6 @@ class BackgroundProcessing {
       topkValues[i] = valuesAndIndices[i].value;
       topkIndices[i] = valuesAndIndices[i].index;
     }
-    if (topkIndices[0] != 2) {
-      return false;
-      
-
-    }
 
     const topClassesAndProbs = [];
     for (let i = 0; i < topkIndices.length; i++) {
@@ -76,7 +72,12 @@ class BackgroundProcessing {
         probability: topkValues[i]
       })
     }
-    return topClassesAndProbs;
+    if (topkIndices[0] != 2)
+      safe = false;
+    return {
+        "safe": safe,
+        "classes": topClassesAndProbs
+    };
   }
 
 
@@ -102,20 +103,21 @@ class BackgroundProcessing {
       setTimeout(() => { this.analyzeImage(src) }, 5000);
       return;
     }
-
-    var meta = this.imageRequests[src];
+    let res;
+    let safe = true;
+    let meta = this.imageRequests[src];
     if (meta && meta.tabId) {
-      console.log("type of meta : " , typeof meta);
       if (!meta.predictions) {
         const img = await this.loadImage(src);
         if (img) {
-          meta.predictions = await this.predict(img);
+          res = await this.predict(img);
+          meta.predictions = res.classes;
+          console.log(res);
         }
       }
       // it's not safe!
-      if (!meta.predictions) {
-        var meta = this.imageRequests[src];
-        console.log("NOT_SAFE: ", imageRequests[src].src);
+      if (!Object.keys(res).safe) {
+        console.log("NOT_SAFE: ", meta);
         chrome.tabs.sendMessage(meta.tabId, {
           action: 'NOT_SAFE',
           payload: meta,
@@ -131,7 +133,7 @@ class BackgroundProcessing {
   }
 }
 
-var bg = new BackgroundProcessing();
+let crypsis = new CrypsisEngine();
 
 // // image to change to
 // // TODO: make a list of images and maybe randomize which image is chosen
