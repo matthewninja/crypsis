@@ -3,11 +3,8 @@ var flippers = [];
 
 const crypsis = (payload) => {
   const images = document.getElementsByTagName('img');
-  console.log("hey!");
   for (let item of images) {
-    console.log("hi!");
     if (item.src === payload.url) {
-      console.log("bye!");
         item.src = 'https://i.imgur.com/ZccahuC.jpg';
         item.srcset = 'https://i.imgur.com/ZccahuC.jpg';
         // delete keys[u];
@@ -44,7 +41,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     const { payload } = message;
     if (payload && payload.url) {
       imageMeta[payload.url] = payload;
-      console.log("a9");
       crypsis(payload);
 
       // const images = document.getElementsByTagName('img');
