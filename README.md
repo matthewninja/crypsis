@@ -33,7 +33,7 @@ Sanitation of webcontent as protection against innappropriate images through the
 
 ## Installation
 
-### Download 
+#### Download 
 
 1.  Access the page of Chrome extensions (chrome://extensions/)
 
@@ -43,7 +43,7 @@ Sanitation of webcontent as protection against innappropriate images through the
 
 4. Select file
 
-### Activate
+#### Activation
 
 1. [Visit the Extension Webstore](https://chrome.google.com/webstore/category/extensions) 
 
