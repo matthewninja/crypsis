@@ -8,7 +8,7 @@ Sanitation of webcontent as protection against innappropriate images through the
 ## Features
 
 <p float="left">
-<img src="https://media.giphy.com/media/QYv0BzS6i8GIti8WTz/giphy.gif" width="500" height="350" />
+<img src="https://media.giphy.com/media/QYv0BzS6i8GIti8WTz/giphy.gif" width="600" height="400" />
 </p>
 
 #### General Features
