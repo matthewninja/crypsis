@@ -1,4 +1,4 @@
-# crypsis <img src="https://github.com/matthewninja/sfw-helper/blob/master/LogoP3.png" width="50">
+# crypsis <img src="https://github.com/matthewninja/sfw-helper/blob/master/Logo.png" width="50">
 Chrome extension to make web content SFW while still allowing access to the site.
 
 
