@@ -50,7 +50,13 @@ Select **Add to Chrome**
 
 ## Usage example
 
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+Through the utilization of Tensorflow models and creating neural networks, when an undesirable image is detected, it is replaced by an appropriate image
+
+'''
+if (predictions[i].className.match(/cat/g) && predictions[i].probability >= 0.50) {
+            images[i].src = "./images/dog.jpg";
+'''
+
 
 _For more examples and usage, please refer to the [Wiki][wiki]._
 
