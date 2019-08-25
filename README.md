@@ -71,7 +71,7 @@ npm test
 
 ## Future Expansion
 
-Additional analysis of potential bias in sources thorugh NLP and cultural/political associations
+Additional analysis of potential bias in sources through NLP and cultural/political association
 
 #### Tech Updates
 
