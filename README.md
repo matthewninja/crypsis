@@ -55,6 +55,7 @@ Through the utilization of Tensorflow models and creating neural networks, when 
 ```
 if (predictions[i].className.match(/cat/g) && predictions[i].probability >= 0.50) {
             images[i].src = "./images/dog.jpg";
+ }
 ```
 *Here, once the probability of the image being a cat is greater than 50%, it is replaced with an image of a dog*
 
