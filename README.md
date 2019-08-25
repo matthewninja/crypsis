@@ -7,7 +7,7 @@ Sanitation of webcontent as protection against innappropriate images through the
 
 ## Features
 
-<img src="https://github.com/matthewninja/sfw-helper/blob/master/image.png" width="250">
+<img src="https://github.com/matthewninja/sfw-helper/blob/master/Logo.png" width="250">
 
 #### General Features
 
