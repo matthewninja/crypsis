@@ -71,6 +71,19 @@ npm test
 
 ## Future Expansion
 
+Additional analysis of potential bias in sources thorugh NLP and cultural/political associations
+
+#### Tech Updates
+
+Incorporate NLP to specify restricted content, eg. 
+
+#### Business Development
+
+Personal plan for family/individual use
+  * Account sign-in on multiple devices
+
+Enterprise subscription based plan for large institutions
+  * Set-up for many users
 
 ## Credit
 <p float="left">
