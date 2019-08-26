@@ -1,6 +1,5 @@
 {
   "manifest_version": 2,
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
   "name": "crypsis",
   "version": "1.0",
   "description":"filters content from web pages",
@@ -25,12 +24,10 @@
   },
   "content_scripts": [
   {
-    "matches": [
-      "<all_urls>"
-    ],
+    "matches": ["<all_urls>"],
     "js": ["src/content.js"],
-    "all_frames": true,
-    "run_at": "document_start"
+    "all_frames": true
   }
-]
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
