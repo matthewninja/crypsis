@@ -16,7 +16,8 @@
     "<all_urls>",
     "storage",
     "tabs",
-    "https://some-random-api.ml/*"
+    "https://some-random-api.ml/*",
+    "https://dog.ceo/api/breeds/image/random"
   ],
   "background": {
     "scripts":["src/background.js"],

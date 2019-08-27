@@ -7,13 +7,24 @@ let nsfw_model = 'src/nsfwjs/model.json';
 class CrypsisEngine {
   constructor() {
     this.addListeners();
+    this.loadModel();
+  }
+
+  async loadModel() {
+    // console.log('Loading model...');
+    let startTime = performance.now();
+    this.model = await tf.loadModel(nsfw_model);
+    this.model.predict(tf.zeros([1, 299, 299, 3])).dispose();
+
+    let totalTime = Math.floor(performance.now() - startTime);
+    console.log(`Model loaded and initialized in ${totalTime}ms...`);
   }
 
   addListeners() {
-
     chrome.runtime.onMessage.addListener(function(message, sender, senderResponse){
       if(message.msg === "image"){
-        fetch('https://some-random-api.ml/pikachuimg')
+        // let puppy_url = chrome.extension.getURL("images/cats/",random,".png");
+        fetch('https://dog.ceo/api/breeds/image/random')
               .then(response => response.text())
               .then(data => {
                 let dataObj = JSON.parse(data);
@@ -24,9 +35,45 @@ class CrypsisEngine {
       }
     });
   }
+
+
+  // async analyzeImage(src) {
+
+  //   if (!this.model) {
+  //     setTimeout(() => { this.analyzeImage(src) }, 5000);
+  //     return;
+  //   }
+  //   let res;
+  //   let meta = this.imageRequests[src];
+  //   if (meta && meta.tabId) {
+  //     if (!meta.predictions) {
+  //       let startTime = performance.now();
+  //       console.log('loading img');
+  //       const img = await this.loadImage(src);
+  //       let totalTime = Math.floor(performance.now() - startTime);
+  //       console.log(`Image in ${totalTime}ms...`);
+  //       if (img) {
+  //         res = await this.predict(img);
+  //         meta.predictions = res.classes;
+  //         res["source"] = img.src;
+  //         console.log(res);
+  //       }
+  //     }
+  //     // it's not safe!
+  //     if (meta.predictions && res && !res.safe) {
+  //       chrome.tabs.sendMessage(meta.tabId, {
+  //         action: 'NOT_SAFE',
+  //         payload: meta,
+  //       });
+  //     }
+  //   }
+  // }
+
+
 }
 
 let crypsis = new CrypsisEngine();
+
 // class CrypsisEngine {
 
 //   constructor() {
@@ -44,15 +91,7 @@ let crypsis = new CrypsisEngine();
 //     }, { urls: ["<all_urls>"], types: ["image", "object"] });
 //   }
 
-//   async loadModel() {
-//     // console.log('Loading model...');
-//     let startTime = performance.now();
-//     this.model = await tf.loadModel(nsfw_model);
-//     this.model.predict(tf.zeros([1, 299, 299, 3])).dispose();
 
-//     let totalTime = Math.floor(performance.now() - startTime);
-//     console.log(`Model loaded and initialized in ${totalTime}ms...`);
-//   }
 
 //   async loadImage(src) {
 //     return new Promise(resolve => {
@@ -62,12 +101,9 @@ let crypsis = new CrypsisEngine();
 //         resolve(null);
 //       };
 //       img.onload = function(e) {
-//           if ((img.height && img.height > 128) || (img.width && img.width > 128)) {
-//           img.width = 299;
-//           img.height = 299;
-//           resolve(img);
-//         }
-//         resolve(null);
+//         img.width = 128;
+//         img.height = 128;
+//         resolve(img);
 //       }
 //       img.src = src;
 //     });
@@ -114,7 +150,7 @@ let crypsis = new CrypsisEngine();
 //       const img = tf.fromPixels(imgElement).toFloat();
 //       const offset = tf.scalar(127.5);
 //       const normalized = img.sub(offset).div(offset);
-//       const batched = normalized.reshape([1, 299, 299, 3]);
+//       const batched = normalized.reshape([1, 128, 128, 3]);
 //       return this.model.predict(batched);
 //     });
 
@@ -125,37 +161,7 @@ let crypsis = new CrypsisEngine();
 //     return predictions;
 //   }
 
-//   async analyzeImage(src) {
 
-//     if (!this.model) {
-//       setTimeout(() => { this.analyzeImage(src) }, 5000);
-//       return;
-//     }
-//     let res;
-//     let meta = this.imageRequests[src];
-//     if (meta && meta.tabId) {
-//       if (!meta.predictions) {
-//         let startTime = performance.now();
-//         console.log('loading img');
-//         const img = await this.loadImage(src);
-//         let totalTime = Math.floor(performance.now() - startTime);
-//         console.log(`Image in ${totalTime}ms...`);
-//         if (img) {
-//           res = await this.predict(img);
-//           meta.predictions = res.classes;
-//           res["source"] = img.src;
-//           console.log(res);
-//         }
-//       }
-//       // it's not safe!
-//       if (meta.predictions && res && !res.safe) {
-//         chrome.tabs.sendMessage(meta.tabId, {
-//           action: 'NOT_SAFE',
-//           payload: meta,
-//         });
-//       }
-//     }
-//   }
 // }
 
 // let crypsis = new CrypsisEngine();
